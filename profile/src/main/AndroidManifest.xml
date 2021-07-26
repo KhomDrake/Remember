@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.remember.profile">
+
+    <application>
+        <activity
+            android:name=".ui.ProfileActivity">
+            <intent-filter>
+                <action android:name="${applicationId}.PROFILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".ProfileModule"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="${applicationId}.Dependency.Profile" />
+    </application>
+
+</manifest>

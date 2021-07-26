@@ -1,0 +1,39 @@
+{
+  "count": 4,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": "390fd604-6629-4b55-b844-8d11479e6eec",
+      "type": {
+        "id": "d524fb19-cecc-440d-8c63-07fbff214564",
+        "name": "Books"
+      },
+      "priority": 1
+    },
+    {
+      "id": "b286c1ad-5bae-4361-a5bc-dd9697cecdf0",
+      "type": {
+        "id": "0bdaa8ec-eca3-4072-af0a-301f611ce207",
+        "name": "estudo2 "
+      },
+      "priority": 2
+    },
+    {
+      "id": "a8cb46bf-d4f0-4459-8222-2eb9534c4b0d",
+      "type": {
+        "id": "5946d8f0-7c47-45ca-b7f0-aa4fc5389975",
+        "name": "estudo3"
+      },
+      "priority": 3
+    },
+    {
+      "id": "da5d8a8c-c006-47f8-8e4f-44aeb98936bc",
+      "type": {
+        "id": "58eea22c-f6a7-441e-b292-d5776598501e",
+        "name": "estudo4"
+      },
+      "priority": 10
+    }
+  ]
+}

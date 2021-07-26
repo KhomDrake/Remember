@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        style="@style/Remember.Style.Title.Bold.Primary"
+        tools:text="Digite o novo item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        style="@style/Remember.Style.Text.Primary"
+        tools:text="Não será possível recuperar depois que deletar a memory line, todos os momentos guardados serão perdidos."
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.remember.common.widget.EventEditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:hint="alksjdlsakjdlksajdsalkj"
+        style="@style/Remember.Widget.Input.Primary"
+        app:layout_constraintTop_toBottomOf="@id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5"/>
+
+    <com.remember.common.widget.LoaderButton
+        android:id="@+id/negative_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="Testando"
+        style="@style/Remember.Widget.Button.Loader.Red"
+        app:caps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input"
+        app:layout_constraintEnd_toStartOf="@id/middle"/>
+
+    <com.remember.common.widget.LoaderButton
+        android:id="@+id/positive_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="6dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="Testando"
+        style="@style/Remember.Widget.Button.Loader.Green"
+        android:layout_marginTop="32dp"
+        app:caps="false"
+        app:layout_constraintTop_toBottomOf="@id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/middle"/>
+
+    <com.remember.common.widget.LoaderButton
+        android:id="@+id/single_positive_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:visibility="gone"
+        tools:text="Testando"
+        style="@style/Remember.Widget.Button.Loader.Green"
+        android:layout_marginTop="32dp"
+        app:caps="false"
+        app:layout_constraintTop_toBottomOf="@id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

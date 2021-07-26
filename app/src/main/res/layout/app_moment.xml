@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="?attr/colorPrimary">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_moment"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:background="@drawable/common_rounded_background"
+        android:layout_marginBottom="8dp"
+        android:transitionName="Moment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/stick"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:background="?attr/colorOnPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_moment" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        style="@style/Remember.Style.Text.Small.Grey2"
+        tools:text="Domingo, 29 de novembro de 2020"
+        app:layout_constraintTop_toBottomOf="@id/image_moment"
+        app:layout_constraintStart_toEndOf="@id/stick"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.remember.common.widget.Avatar
+        android:id="@+id/owner"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/stick"
+        app:layout_constraintTop_toBottomOf="@id/date" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        style="@style/Remember.Style.Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/owner"
+        app:layout_constraintTop_toTopOf="@id/owner"
+        tools:text="Esse dia foi demais! compramos muitos gatinhos online! Muito divertido! Eu am..." />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="description, owner"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="16dp"
+        android:text="@string/app_moment_comments_text"
+        style="@style/Remember.Style.Text.Small.Grey2"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

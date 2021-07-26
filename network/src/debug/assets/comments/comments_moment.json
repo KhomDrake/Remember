@@ -1,0 +1,59 @@
+{
+  "next": "sda",
+  "previous": null,
+  "count": 3232,
+  "results": [
+    {
+      "id": "klsjdlaskd",
+      "content": "akjskajska",
+      "owner": {
+        "id": "aksjdlaks",
+        "nickname": "wit",
+        "name": "hoid",
+        "username": "kajsakjsa",
+        "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_14.jpg"
+      },
+      "created_at": "2020-06-15T22:17:47.303153-03:00",
+      "updated_at": "2020-06-15T22:17:47.303153-03:00"
+    },
+    {
+      "id": "klsjdlaskd",
+      "content": "akjskajska",
+      "owner": {
+        "id": "aksjdlaks",
+        "nickname": "wit",
+        "name": "hoid",
+        "username": "kajsakjsa",
+        "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_14.jpg"
+      },
+      "created_at": "2020-06-15T22:17:47.303153-03:00",
+      "updated_at": "2020-06-15T22:17:47.303153-03:00"
+    },
+    {
+      "id": "klsjdlaskd",
+      "content": "akjskajska",
+      "owner": {
+        "id": "aksjdlaks",
+        "nickname": "wit",
+        "name": "hoid",
+        "username": "kajsakjsa",
+        "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_14.jpg"
+      },
+      "created_at": "2020-06-15T22:17:47.303153-03:00",
+      "updated_at": "2020-06-15T22:17:47.303153-03:00"
+    },
+    {
+      "id": "klsjdlaskd",
+      "content": "akjskajska",
+      "owner": {
+        "id": "aksjdlaks",
+        "nickname": "wit",
+        "name": "hoid",
+        "username": "kajsakjsa",
+        "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_14.jpg"
+      },
+      "created_at": "2020-06-15T22:17:47.303153-03:00",
+      "updated_at": "2020-06-15T22:17:47.303153-03:00"
+    }
+  ]
+}

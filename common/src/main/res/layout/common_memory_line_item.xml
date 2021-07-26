@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:background="@drawable/common_rounded_background"
+    android:elevation="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    android:paddingBottom="8dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/half"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/first_moment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/half"
+        android:outlineProvider="background"
+        android:layout_marginEnd="1dp"
+        android:layout_width="0dp"
+        android:layout_height="120dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/second_moment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/half"
+        android:outlineProvider="background"
+        android:layout_marginStart="1dp"
+        android:layout_width="0dp"
+        android:layout_height="120dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/enter_memory_line"
+        android:src="@drawable/common_enter_memory_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_moment"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/has_more_participants"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/common_has_more_participants"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/enter_memory_line"
+        app:layout_constraintTop_toBottomOf="@+id/second_moment" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_memory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="16dp"
+        tools:text="Cosmere"
+        style="@style/Remember.Style.Text.Small.Bold"
+        app:layout_constraintEnd_toEndOf="@id/half"
+        app:layout_constraintTop_toBottomOf="@id/first_moment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/last_time_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        style="@style/Remember.Style.Text.Small.Grey.Bold"
+        android:alpha="0.4"
+        app:layout_constraintEnd_toEndOf="@id/title_memory"
+        app:layout_constraintStart_toStartOf="@id/title_memory"
+        app:layout_constraintTop_toBottomOf="@id/title_memory"
+        tools:text="Última atualização 3h atrás" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

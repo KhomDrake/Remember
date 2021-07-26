@@ -1,0 +1,29 @@
+<resources>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="profile_toolbar_title">Perfil</string>
+    <string name="profile_update_profile_button"><b>Alterar</b></string>
+    <string name="profile_choose_profile_picture_title">Trocar foto de perfil</string>
+    <string name="profile_delete_account_title_text">Você está prestes a deletar \n sua conta!</string>
+    <string name="profile_delete_account_sub_title_text">Todos os seus dados serão perdidos, \n incluindo suas publicações, \n comentários e dados de usuário.</string>
+    <string name="profile_return_text">Retornar</string>
+    <string name="profile_delete_account_button_text">EXCLUIR CONTA</string>
+    <string name="profile_username_title_text">Usuário</string>
+    <string name="profile_name_title_text">Nome</string>
+    <string name="profile_nickname_title">Como quer ser chamado(a)</string>
+    <string name="profile_change_profile_picture_title">Foto de perfil</string>
+    <string name="profile_delete_text">Remover</string>
+    <string name="profile_gallery_text">Galeria</string>
+    <string name="profile_camera_text">Câmera</string>
+    <string name="profile_error_profile_body">Não foi possível carregar o seu perfil. Por favor, tente novamente.</string>
+    <string name="profile_profile_picture_removed_success">Removido com sucesso</string>
+    <string name="profile_profile_picture_removed_failure">Falha ao remover foto de perfil</string>
+    <string name="profile_profile_changed_success">Alterado com sucesso</string>
+    <string name="profile_profile_changed_failure">Falha ao alterar a foto de perfil</string>
+    <string name="profile_picture_failure">Falha ao tentar abrir câmera</string>
+    <string name="profile_update_profile_picture_button_text">Atualizar</string>
+
+    <string-array name="options_profile_picture">
+        <item>Câmera</item>
+        <item>Galeria</item>
+    </string-array>
+</resources>

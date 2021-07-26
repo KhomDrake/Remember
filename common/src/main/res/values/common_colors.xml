@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="statusBarColor">#263238</color>
+    <color name="remember_primary_color">#263238</color>
+    <color name="remember_white">#FFFFFF</color>
+    <color name="remember_black">#000000</color>
+    <color name="remember_grey_dark">#D14B4B4B</color>
+    <color name="remember_grey_light">#B4B4B4</color>
+    <color name="remember_red">#E55A5A</color>
+    <color name="remember_red_70">#CDCDCD</color>
+    <color name="remember_blue">#38B49D</color>
+    <color name="remember_green">#38B49D</color>
+    <color name="remember_grey">#CDCDCD</color>
+    <color name="remember_white_grey">#EEEEEE</color>
+    <color name="remember_switch_background">#7CD084</color>
+    <color name="remember_dark_blue">#5965C8</color>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_navigation"
+    app:startDestination="@id/profileFragment">
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.remember.profile.ui.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile_fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_deleteAccountFragment"
+            app:destination="@id/deleteAccountFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_chooseAlbumProfileFragment"
+            app:destination="@id/chooseAlbumProfileFragment">
+            <argument
+                android:name="profileId"
+                app:argType="string"
+                app:nullable="false" />
+        </action>
+        <action
+            android:id="@+id/action_profileFragment_to_takeProfilePictureFragment"
+            app:destination="@id/takeProfilePictureFragment">
+            <argument
+                android:name="profileId"
+                app:argType="string"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/deleteAccountFragment"
+        android:name="com.remember.profile.ui.DeleteAccountFragment"
+        android:label="DeleteAccountFragment"
+        tools:layout="@layout/profile_fragment_delete_account"/>
+    <fragment
+        android:id="@+id/chooseAlbumProfileFragment"
+        android:name="com.remember.profile.ui.picture.gallery.ChooseAlbumProfileFragment"
+        android:label="ChooseAlbumProfileFragment" >
+
+        <argument
+            android:name="profileId"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_chooseAlbumProfileFragment_to_choosePhotoProfileFragment"
+            app:destination="@id/choosePhotoProfileFragment" >
+            <argument
+                android:name="profileId"
+                app:argType="string"
+                app:nullable="false" />
+            <argument
+                android:name="album"
+                app:argType="com.remember.repository.model.Album"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/choosePhotoProfileFragment"
+        android:name="com.remember.profile.ui.picture.gallery.ChoosePhotoProfileFragment"
+        android:label="ChoosePhotoProfileFragment" >
+        <argument
+            android:name="profileId"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="album"
+            app:argType="com.remember.repository.model.Album"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_choosePhotoProfileFragment_to_previewProfilePictureFragment"
+            app:destination="@id/previewProfilePictureFragment">
+
+            <argument
+                android:name="profileId"
+                app:argType="string"
+                app:nullable="false" />
+
+            <argument
+                android:name="file"
+                app:argType="java.io.File"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/takeProfilePictureFragment"
+        android:name="com.remember.profile.ui.picture.camera.TakeProfilePictureFragment"
+        android:label="TakeProfilePictureFragment" >
+        <argument
+            android:name="profileId"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_takeProfilePictureFragment_to_previewProfilePictureFragment"
+            app:destination="@id/previewProfilePictureFragment" >
+
+            <argument
+                android:name="profileId"
+                app:argType="string"
+                app:nullable="false" />
+
+            <argument
+                android:name="file"
+                app:argType="java.io.File"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/previewProfilePictureFragment"
+        android:name="com.remember.profile.ui.picture.preview.PreviewProfilePictureFragment"
+        android:label="PreviewProfilePictureFragment" >
+
+
+        <argument
+            android:name="profileId"
+            app:argType="string"
+            app:nullable="false" />
+
+        <argument
+            android:name="file"
+            app:argType="java.io.File"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_previewProfilePictureFragment_to_profileFragment2"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/profile_navigation" />
+    </fragment>
+</navigation>

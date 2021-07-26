@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_home_title">Remember</string>
+
+    <string name="app_title_home">Home</string>
+    <string name="app_title_notifications">Notificações</string>
+    <string name="app_title_configuration">Configuração</string>
+    <string name="app_remember_title">REMEMBER</string>
+    <string name="app_create_memory_line_memory_line_name">Nome</string>
+    <string name="app_notifications_title">Notificações</string>
+    <string name="app_notification_empty_invites_text">Não há notificações :(</string>
+    <string name="app_memory_line_add_participant_title">Novo participante</string>
+    <string name="app_memory_line_configuration_add_participant">Novo participante</string>
+    <string name="app_memory_line_configuration_leave_memory_line_text">Sair da Memory Line</string>
+    <string name="app_memory_line_configuration_delete_memory_line_text">Deletar Memory Line</string>
+    <string name="app_memory_line_participants_title">Participantes</string>
+    <string name="app_memory_line_participants_empty_state_text">Não tem nenhum participante</string>
+    <string name="app_invites_accept_text">Aceitar</string>
+    <string name="app_invites_refuse_text">Recusar</string>
+    <string name="app_moment_comment_text">Comentar</string>
+    <string name="app_participant_item_memory_line_owner">DONO DA MEMORYLINE</string>
+    <string name="app_memory_line_empty_name">Nome não pode está vazio</string>
+    <string name="app_memory_line_name_not_changed">Altere o nome antes de atualizar</string>
+    <string name="app_memory_line_update_name_failed">Falha na alteração do nome</string>
+    <string name="app_update_with_success">Alteração com sucesso</string>
+    <string name="app_invite_accept">Convite aceito com sucesso</string>
+    <string name="app_invite_accept_error">Falha ao aceitar convite</string>
+    <string name="app_invite_refused">Convite recusado com sucesso</string>
+    <string name="app_invite_refused_error">Falha ao recusar convite</string>
+    <string name="app_invite_messsage">%1$s está te convidando para a Memory Line %2$s</string>
+    <string name="app_search_new_participant">Pesquisar novo participante...</string>
+    <string name="app_successfully_invited">Convites feitos com sucesso</string>
+    <string name="app_quantity_participants">%1$d Participantes</string>
+    <string name="app_create_memory_line">Criar Memory Line</string>
+    <string name="app_inform_memory_line_name">Informe um nome para a Memory Line</string>
+    <string name="app_memory_line_created_with_success">Memory Line criada com sucesso</string>
+    <string name="app_invites_send_with_success">Convites Enviados com sucesso</string>
+    <string name="app_pending_invites"><b>Convites pendentes</b></string>
+    <string name="app_create_memory_line_title">Nova MemoryLine</string>
+    <string name="app_create_memory_line_action_text">Criar</string>
+    <string name="app_name_memory_line_text">Nome da Memory Line</string>
+    <string name="app_create_memory_line_add_participant">Novo participante</string>
+    <string name="app_choose_participant_title">Adicionar Participantes</string>
+    <string name="app_confirm">Confirmar</string>
+    <string name="app_accept_invite_text">Aceitar</string>
+    <string name="app_refuse_invite_text">Recusar</string>
+    <string name="app_change_memory_line_title"><b>Nome da MemoryLine</b></string>
+    <string name="app_change_memory_line_positive_button">Alterar</string>
+    <string name="app_change_memory_line_negative_button">Cancelar</string>
+    <string name="app_empty_state_home_text">Parece que você não tem nenhum tipo de memory line, crie um tipo clicando no (+)</string>
+    <string name="app_add_memory_line_type">Tipo de Memory Line</string>
+    <string name="app_add_memory_line">Memory Line</string>
+    <string name="app_memories_title">Lembranças</string>
+    <string name="app_memories_see_more">Ver todas as lembranças</string>
+    <string name="app_memories_empty_text">Possui nenhuma lembrança.</string>
+    <string name="app_invites_title">Convites</string>
+    <string name="app_activities_title">Atividades nas Memory Line</string>
+    <string name="app_activities_see_more">Ver todas as atividades</string>
+    <string name="app_activities_empty_text">Possui nenhuma atividade.</string>
+    <string name="app_invites_see_more">Ver todos os convites</string>
+    <string name="app_invites_empty_text">Possui nenhuma convite.</string>
+    <string name="app_configuration_title">Configuração</string>
+    <string name="app_config_notification_text">Deseja receber notificações dentro do App</string>
+    <string name="app_config_memories_text">Deseja receber lembranças</string>
+    <string name="app_config_invites_text">Deseja receber convites</string>
+    <string name="app_config_notification_out_of_app_text">Deseja receber notificações fora do App</string>
+    <string name="app_button_leave_text">Sair</string>
+    <string name="app_button_delete_account_text">Excluir conta</string>
+    <string name="app_add_moment_option_text">Câmera</string>
+    <string name="app_add_moment_option_text_2">Galeria</string>
+    <string name="app_error_memory_line_title">Ocorreu um erro</string>
+    <string name="app_error_memory_line_body">Não foi possível carregar os momentos da Memory Line. Por favor, tente novamente.</string>
+
+    <string name="app_version_app">Versão %s</string>
+
+    <string name="app_error_notifications_body">Não foi possível carregar as notificações. Por favor, tente novamente.</string>
+
+    <string name="app_error_history_body">Não foi possível carregar a história do Remember. Por favor, tente novamente.</string>
+
+    <string name="app_error_terms">Ocorreu um erro ao aceitar o termo de condição de uso, tente novamente.</string>
+
+    <string name="app_error_terms_body">Ocorreu um erro ao carregar o termo de condição de uso, tente novamente.</string>
+
+    <string name="app_cannot_open_camera_empty_state">Você não poder criar um momento, enquanto não criou um tipo de Memory Line e uma Memory Line</string>
+
+    <string name="app_invite_participants_button_text">Convidar</string>
+    <string name="app_memory_line_history_name">História do Remember</string>
+
+    <string name="app_change_memory_line_name_title">Digite o novo nome</string>
+    <string name="app_change_memory_line_name_hint">Nome da Memory Line</string>
+    <string name="app_change_memory_line_name_positive_button">Alterar</string>
+    <string name="app_change_memory_line_name_negative_button">Cancelar</string>
+
+    <string name="app_memory_line_name_equal">O nome continua igual, altere o valor por favor</string>
+    <string name="app_memory_line_name_empty">Valor vazio, alterar o valor por favor</string>
+    <string name="app_memory_line_name_success">Sucesso ao alterar nome da Memory Line</string>
+    <string name="app_memory_line_name_error">Falha ao alterar nome da Memory Line</string>
+
+    <string name="app_memory_line_delete_success">Memory Line Deletada com sucesso</string>
+    <string name="app_memory_line_delete_error">Falha ao excluir a memory line</string>
+
+    <string name="app_add_participant_not_user_selected">Selecione um usuário para convidar</string>
+
+    <string name="app_failure_to_create_invite">Falha ao criar o convite</string>
+
+    <string name="app_delete_memory_line_title">Deseja realmente deletar ?</string>
+    <string name="app_delete_memory_line_message">Não será possível recuperar depois que deletar a memory line, todos os momentos guardados serão perdidos.</string>
+    <string name="app_delete_memory_line_positive_button">Cancelar</string>
+    <string name="app_delete_memory_line_negative_button">Deletar</string>
+    <string name="app_moment_comments_text">Comentários</string>
+
+    <string name="app_term_accept">Aceitar</string>
+
+    <!-- Push Notification -->
+    <string name="app_app_information_name">Novidades Remember</string>
+    <string name="app_app_information_description">Receba notificações relacionadas a novidades do App</string>
+    <string name="app_invite_name">Convites</string>
+    <string name="app_invite_description">Receba notificações de convites para entrar em outras Memory Lines</string>
+    <string name="app_comment_name">Comentários</string>
+    <string name="app_comment_description">Receba notificações de comentários de outros usuários nos momentos importantes da sua vida</string>
+    <string name="app_memory_line_name">Memory Line</string>
+    <string name="app_memory_line_description">Receba notificações a linha de tempos compartilhadas no remember</string>
+    <string name="app_moment_name">Momentos</string>
+    <string name="app_moment_description">Receba notificações sobre os momentos importantes que você compartilhou no remember</string>
+    <string name="app_advertising_name">Propaganda</string>
+    <string name="app_advertising_description">Receba notificações relacionadas a propaganda</string>
+</resources>

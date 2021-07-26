@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RememberTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#263238</item>
+        <item name="colorHint">#B8FFFFFF</item>
+        <item name="colorHintPrimary">#99263238</item>
+        <item name="colorSwitch">#006A9E</item>
+        <item name="colorSecondary">#006A9E</item>
+        <item name="colorError">#E55A5A</item>
+        <item name="colorOnError">#ffffff</item>
+        <item name="colorSuccess">#38B49D</item>
+        <item name="colorNeutral">#CDCDCD</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorStartShimmer">#6AFFFFFF</item>
+        <item name="colorEndShimmer">#A6FFFFFF</item>
+
+
+
+        <item name="colorPrimaryLight">#4f5b62</item>
+        <item name="colorPrimaryDark">#353535</item>
+        <item name="colorSecondaryLight">#8197ff</item>
+        <item name="colorSecondaryDark">#003fcb</item>
+        <item name="colorOnBackground">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorOnSurfaceDark">#000000</item>
+        <item name="colorOnSurfaceVariant">#5965C8</item>
+        <item name="colorOnSurfaceLight">#CDCDCD</item>
+        <item name="colorOnSuccess">#ffffff</item>
+        <item name="colorOnNeutral">#000000</item>
+        <item name="colorOnPrimaryLight">#000000</item>
+        <item name="colorOnPrimaryDark">#ffffff</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="colorOnSecondaryLight">#000000</item>
+        <item name="colorOnSecondaryDark">#ffffff</item>
+        <item name="colorBackground">?attr/colorPrimary</item>
+    </style>
+
+    <style name="RememberAppThemeSecondTest" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="RememberAppTheme" parent="RememberTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="android:statusBarColor">?attr/colorOnSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="RememberAppTheme.Light">
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="RememberAppTheme.Brand">
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="RememberAppTheme.Dark">
+        <item name="android:statusBarColor">?attr/colorOnSurfaceDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="RememberAppTheme.Primary">
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Remember" parent="RememberAppTheme"/>
+
+    <style name="Remember.Theme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="Remember.Widget" parent="RememberAppTheme"/>
+
+    <style name="Remember.ActionSheet"/>
+
+    <style name="Remember.Shimmer">
+        <item name="shimmer_auto_start">true</item>
+        <item name="shimmer_base_color">?attr/colorStartShimmer</item>
+        <item name="shimmer_highlight_color">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Remember.ActionSheet.Rounded">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/Remember.ActionSheet.BottomSheetRounded</item>
+    </style>
+
+    <style name="Remember.ActionSheet.BottomSheetRounded">
+        <item name="android:background">@drawable/common_rounded_background_bottom_sheet</item>
+    </style>
+
+    <style name="Remember.Widget.Toolbar">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/remember_title_medium_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="backIcon">@drawable/common_arrow_left</item>
+    </style>
+
+    <style name="Remember.Widget.Toolbar.Logo">
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+        <item name="android:fontFamily">@font/courgette_regular</item>
+        <item name="backIcon">@drawable/common_ic_select_camera</item>
+    </style>
+
+    <style name="Remember.Widget.Toolbar.Logo2">
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+        <item name="android:fontFamily">@font/courgette_regular</item>
+        <item name="backIcon">@drawable/common_arrow_left</item>
+    </style>
+
+    <style name="Remember.Widget.Search">
+        <item name="android:background">@drawable/common_remember_background_input</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textColorHint">#99353535</item>
+        <item name="android:indeterminateTint">?attr/colorPrimary</item>
+        <item name="eventIcon">@drawable/common_ic_search</item>
+        <item name="android:inputType">textLongMessage</item>
+    </style>
+
+    <style name="Remember.Widget.SendMessage">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textColorHint">#99353535</item>
+        <item name="android:indeterminateTint">?attr/colorPrimary</item>
+        <item name="android:background">@drawable/common_remember_background_input</item>
+        <item name="eventIcon">@drawable/common_send_message_ic</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:lines">2000</item>
+    </style>
+
+    <style name="Remember.Widget.Add">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textColorHint">?attr/colorHint</item>
+        <item name="eventIcon">@drawable/common_ic_add</item>
+        <item name="android:lines">1</item>
+        <item name="hasUnderline">true</item>
+    </style>
+
+    <style name="Remember.Widget.Input">
+        <item name="android:lines">1</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textColorHint">?attr/colorHint</item>
+        <item name="hasUnderline">true</item>
+    </style>
+
+    <style name="Remember.Widget.Input.Primary">
+        <item name="android:lines">1</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textColorHint">?attr/colorHintPrimary</item>
+        <item name="hasUnderline">true</item>
+    </style>
+
+    <style name="Remember.Widget.Option">
+        <item name="eventIconTextView">@drawable/common_ic_arrow_down</item>
+        <item name="hasUnderlineTextView">true</item>
+    </style>
+
+    <style name="Remember.Widget.ImageTextView">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_small_big_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Widget.ImageTextView.Error">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_small_big_text</item>
+        <item name="android:textColor">?attr/colorError</item>
+    </style>
+
+    <style name="Remember.Widget.Button">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/remember_small_big_text</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:background">@drawable/common_remember_background_green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+    <style name="Remember.Widget.Button.Grey">
+        <item name="android:textColor">?attr/colorOnSurfaceDark</item>
+        <item name="android:background">@drawable/common_remember_background_grey</item>
+    </style>
+
+    <style name="Remember.Widget.Button.Red">
+        <item name="android:background">@drawable/common_remember_background_red</item>
+    </style>
+
+    <style name="Remember.Widget.Button.White">
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:background">@drawable/common_remember_background_white</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="caps">false</item>
+    </style>
+
+    <style name="Remember.Widget.Button.Loader">
+        <item name="android:minHeight">44dp</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+    </style>
+
+    <style name="Remember.Widget.Button.Loader.Green">
+        <item name="caps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/common_remember_background_green_more_rounded</item>
+    </style>
+
+    <style name="Remember.Widget.Button.Loader.Grey">
+        <item name="android:textColor">?attr/colorOnSurfaceDark</item>
+        <item name="android:background">@drawable/common_remember_background_grey</item>
+    </style>
+
+    <style name="Remember.Widget.Button.Loader.Red">
+        <item name="android:background">@drawable/common_remember_background_red_rounded</item>
+    </style>
+
+    <style name="Remember.Widget.Button.Loader.White">
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:background">@drawable/common_remember_background_white</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="caps">false</item>
+    </style>
+
+    <style name="Remember.Style" parent="RememberAppTheme"/>
+
+    <style name="Remember.Style.InputDialog">
+        <item name="colorPrimary">?attr/colorOnSurfaceDark</item>
+        <item name="colorPrimaryDark">?attr/colorOnSurfaceDark</item>
+        <item name="colorAccent">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="Remember.Style.Switch" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:background">@drawable/common_switch_background</item>
+        <item name="thumbTint">@color/common_switch_thumb</item>
+        <item name="trackTint">@color/common_switch_track</item>
+    </style>
+
+    <style name="Remember.Style.Indicator">
+        <item name="dotsColor">?attr/colorOnPrimary</item>
+        <item name="dotsCornerRadius">8dp</item>
+        <item name="dotsSize">8dp</item>
+        <item name="dotsSpacing">4dp</item>
+    </style>
+
+    <style name="Remember.Style.Input">
+        <item name="android:background">@drawable/common_white_corner_radius</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">textLongMessage</item>
+        <item name="android:textAppearance">@style/Remember.Style.Text.Input</item>
+        <item name="android:minHeight">40dp</item>
+    </style>
+
+    <style name="Remember.Style.InputNoEdit">
+        <item name="android:background">@drawable/common_white_corner_radius</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_small_big_text</item>
+    </style>
+
+    <style name="Remember.Style.Input.White">
+    </style>
+
+    <style name="Remember.Style.Input.White.Small">
+        <item name="android:gravity">start</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:background">@drawable/common_white_corner_radius_small</item>
+    </style>
+
+    <style name="Remember.Style.Input.White.Medium">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:background">@drawable/common_white_corner_radius_medium</item>
+    </style>
+
+    <style name="Remember.Style.Text">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:lineSpacingExtra">1dp</item>
+    </style>
+
+    <style name="Remember.Style.Text.Smallest">
+        <item name="android:fontFamily">@font/comfortaa_light</item>
+        <item name="android:textSize">@dimen/remember_small_text</item>
+    </style>
+
+    <style name="Remember.Style.Text.Smallest.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/remember_small_medium_text</item>
+    </style>
+
+    <style name="Remember.Style.Text.Smallest.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Smallest.Success">
+        <item name="android:textColor">?attr/colorSuccess</item>
+    </style>
+
+    <style name="Remember.Style.Text.Small">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_small_medium_text</item>
+        <item name="android:textColor">?attr/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Text.Small.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Small.OnPrimary">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Small.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+    </style>
+
+    <style name="Remember.Style.Text.Small.Grey">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">#9C000000</item>
+    </style>
+
+    <style name="Remember.Style.Text.Small.Grey2">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">#99FFFFFF</item>
+    </style>
+
+    <style name="Remember.Style.Text.Small.Grey.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+    </style>
+
+    <style name="Remember.Style.Text.Big">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_small_big_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Big.Primary">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_small_big_text</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Big.Second">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Big.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/remember_small_big_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Bold.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Big">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Big.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Big.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Title">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Medium">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_title_medium_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Medium.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/remember_title_medium_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Input">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_small_big_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textColorHint">?attr/colorHint</item>
+    </style>
+
+    <style name="Remember.Style.SubTitle">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_sub_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.SubTitle.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+    </style>
+
+    <style name="Remember.Style.Text.Primary">
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+
+
+
+    <style name="Remember.Style.Text.Error">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorError</item>
+    </style>
+
+    <style name="Remember.Style.Text.Error.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorError</item>
+    </style>
+
+    <style name="Remember.Style.Text.Secondary">
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Secondary.Light">
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorOnSecondaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Text.Secondary.Dark">
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorOnSecondaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Text.Primary.Light">
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Text.Primary.Dark">
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorOnPrimaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Text.White">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Text.Red">
+        <item name="android:textColor">?attr/colorError</item>
+    </style>
+
+    <style name="Remember.Style.Text.Blue">
+        <item name="android:textColor">?attr/colorOnSecondaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Text.Input.Secondary">
+        <item name="android:textSize">@dimen/remember_medium_text</item>
+        <item name="android:textColor">?attr/colorOnSecondaryDark</item>
+        <item name="android:textColorHint">?attr/colorOnSecondaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Text.Input.Dark">
+        <item name="android:textColorHint">?attr/colorOnSecondaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Text.Green">
+        <item name="android:textColor">?attr/colorOnSuccess</item>
+    </style>
+
+    <style name="Remember.Style.Title.Secondary">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Secondary.Light">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnSecondaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Title.Secondary.Dark">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnSecondaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Title.Secondary.Dark.Ripple">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Remember.Style.Title.Primary">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Primary.Ripple">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Remember.Style.Title.Primary.Light">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Title.Primary.Dark">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimaryDark</item>
+    </style>
+
+    <style name="Remember.Style.SubTitle.Primary">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.SubTitle.Primary.Light">
+        <item name="android:textColor">?attr/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Remember.Style.SubTitle.Primary.Dark">
+        <item name="android:textColor">?attr/colorOnPrimaryDark</item>
+    </style>
+
+    <style name="Remember.Style.SubTitle.Secondary">
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="Remember.Style.SubTitle.Secondary.Light">
+        <item name="android:textColor">?attr/colorOnSecondaryLight</item>
+    </style>
+
+    <style name="Remember.Style.SubTitle.Secondary.Dark">
+        <item name="android:textColor">?attr/colorOnSecondaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Title.Blue">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Title.White">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/remember_title_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Title.White.Ripple">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Remember.Style.Title.SmallBig">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/remember_title_small_big_size_text</item>
+        <item name="android:textColor">?attr/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Title.SmallBig.Primary">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.SmallBig.Primary.Light">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Title.SmallBig.Primary.Dark">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorOnPrimaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Title.SmallBig.Secondary">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="Remember.Style.Title.SmallBig.Secondary.Light">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorOnSecondaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Title.SmallBig.Secondary.Dark">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorOnSecondaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Title.Big.Primary.Light">
+        <item name="android:textColor">?attr/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Title.Big.Primary.Dark">
+        <item name="android:textColor">?attr/colorOnPrimaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Title.Big.App">
+        <item name="android:fontFamily">@font/hint_bold</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Bigger">
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+    </style>
+
+    <style name="Remember.Style.Title.Bigger.Bold">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="Remember.Style.Title.Bigger.Secondary">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+    </style>
+
+    <style name="Remember.Style.Title.Bigger.Secondary.Light">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorOnSecondaryLight</item>
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+    </style>
+
+    <style name="Remember.Style.Title.Bigger.Secondary.Dark">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textColor">?attr/colorOnSecondaryDark</item>
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+    </style>
+
+    <style name="Remember.Style.Title.Big.Secondary">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="Remember.Style.Title.Big.Secondary.Light">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+        <item name="android:textColor">?attr/colorOnSecondaryLight</item>
+    </style>
+
+    <style name="Remember.Style.Title.Big.Secondary.Dark">
+        <item name="android:fontFamily">@font/comfortaa_regular</item>
+        <item name="android:textSize">@dimen/remember_title_big_size_text</item>
+        <item name="android:textColor">?attr/colorOnSecondaryDark</item>
+    </style>
+
+    <style name="Remember.Style.Title.Success">
+        <item name="android:textColor">?attr/colorSuccess</item>
+    </style>
+
+    <style name="Remember.Style.Title.State">
+        <item name="android:textColor">@drawable/common_success_state_list</item>
+    </style>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    tools:context=".ui.MemoryLineTypeActivity">
+
+    <com.remember.common.widget.RememberToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_memory_line_type_toolbar_text"
+        style="@style/Remember.Widget.Toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.remember.common.widget.EventEditText
+        android:id="@+id/add_memory_line_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="26dp"
+        android:inputType="textShortMessage"
+        android:hint="@string/type_hint_edit_text_create_memory_line_type"
+        android:visibility="gone"
+        style="@style/Remember.Widget.Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        layout="@layout/type_activity_memory_line_type_placeholder"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/my_types_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_my_types_title"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="28dp"
+        android:visibility="gone"
+        style="@style/Remember.Style.Title.Bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_memory_line_type" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/common_hint_icon"
+        app:layout_constraintStart_toEndOf="@id/my_types_title"
+        app:layout_constraintBottom_toBottomOf="@id/my_types_title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/memory_line_types"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        tools:itemCount="5"
+        tools:listitem="@layout/type_memory_line_type_layout"
+        app:layout_constraintTop_toBottomOf="@id/my_types_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/update"/>
+
+    <com.remember.common.widget.LoaderButton
+        android:id="@+id/update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/type_update_button_text"
+        app:enabled="false"
+        style="@style/Remember.Widget.Button.Loader.Green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

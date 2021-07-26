@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:text="@string/profile_change_profile_picture_title"
+        tools:visibility="visible"
+        style="@style/Remember.Style.Title.Bold.Primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:elevation="2dp"
+        android:src="@drawable/profile_delete_ic"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delete_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_delete_text"
+        android:layout_marginTop="12dp"
+        style="@style/Remember.Style.Text.Smallest.Primary"
+        app:layout_constraintStart_toStartOf="@id/delete_icon"
+        app:layout_constraintEnd_toEndOf="@id/delete_icon"
+        app:layout_constraintTop_toBottomOf="@id/delete_icon"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/delete_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="delete_icon, delete_text"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/gallery_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:elevation="2dp"
+        android:src="@drawable/profile_gallery_ic"
+        app:layout_constraintStart_toStartOf="@id/delete_barrier"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gallery_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_gallery_text"
+        android:layout_marginTop="12dp"
+        style="@style/Remember.Style.Text.Smallest.Primary"
+        app:layout_constraintStart_toStartOf="@id/gallery_icon"
+        app:layout_constraintEnd_toEndOf="@id/gallery_icon"
+        app:layout_constraintTop_toBottomOf="@id/gallery_icon"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/gallery_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="gallery_icon, gallery_text"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/camera_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:elevation="2dp"
+        android:src="@drawable/profile_camera_ic"
+        app:layout_constraintStart_toStartOf="@id/gallery_barrier"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/camera_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/profile_camera_text"
+        style="@style/Remember.Style.Text.Smallest.Primary"
+        app:layout_constraintStart_toStartOf="@id/camera_icon"
+        app:layout_constraintEnd_toEndOf="@id/camera_icon"
+        app:layout_constraintTop_toBottomOf="@id/camera_icon"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+include ':camera'
+include ':memoryline'
+include ':type'
+include ':gallery'
+include ':repository', ':app', ':network', ':common', ':moment', ':onboarding', ':extension', ':profile', ':test'
+rootProject.name='Remember'

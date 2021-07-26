@@ -1,0 +1,31 @@
+buildscript {
+    apply from: "$rootDir/tools/versions.gradle"
+    apply from: "$rootDir/tools/libs.gradle"
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath libs.tools_build_gralde
+        classpath libs.kotlin_gradle_plugin
+        classpath libs.navigation_safe_args
+        classpath libs.google_services
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+    configurations.all {
+        resolutionStrategy.force 'org.objenesis:objenesis:2.6'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

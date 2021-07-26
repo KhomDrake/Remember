@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/input_name_input_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_input_first_name_input_name_text"
+        android:layout_marginTop="32dp"
+        style="@style/Remember.Style.Title.Medium.Bold"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_name_input"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Vinicius"
+        style="@style/Remember.Style.Input"
+        app:layout_constraintTop_toBottomOf="@id/input_name_input_name"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintEnd_toEndOf="@id/right"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/input_nickname_input_name"
+        style="@style/Remember.Style.Title.Medium.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/onboarding_input_second_name_input_name_text"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintTop_toBottomOf="@id/input_name_input" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_nickname_input"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Lucena"
+        style="@style/Remember.Style.Input"
+        app:layout_constraintTop_toBottomOf="@id/input_nickname_input_name"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintEnd_toEndOf="@id/right"/>
+
+    <com.remember.common.widget.LoaderButton
+        android:id="@+id/continue_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_button_continue_text"
+        android:layout_marginBottom="32dp"
+        style="@style/Remember.Widget.Button.Loader.White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/left"
+        app:layout_constraintEnd_toEndOf="@id/right" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="32dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="profile_toolbar_title">Profile</string>
+    <string name="profile_update_profile_button"><b>Update</b></string>
+    <string name="profile_choose_profile_picture_title">Change profile picture</string>
+    <string name="profile_delete_account_title_text">You are about to delete \nyour account!</string>
+    <string name="profile_delete_account_sub_title_text">All your data will be lost,\nincluding your posts,\ncomments and user data.</string>
+    <string name="profile_return_text">Turn back</string>
+    <string name="profile_delete_account_button_text">DELETE ACCOUNT</string>
+    <string name="profile_username_title_text">Username</string>
+    <string name="profile_name_title_text">Name</string>
+    <string name="profile_nickname_title">What do you want to be called?</string>
+    <string name="profile_change_profile_picture_title">Profile picture</string>
+    <string name="profile_delete_text">Remove</string>
+    <string name="profile_gallery_text">Gallery</string>
+    <string name="profile_camera_text">Camera</string>
+    <string name="profile_error_profile_body">Unable to load your profile. Please try again.</string>
+    <string name="profile_profile_picture_removed_success">Successfully removed</string>
+    <string name="profile_profile_picture_removed_failure">Failed to remove profile picture</string>
+    <string name="profile_profile_changed_success">Successfully changed</string>
+    <string name="profile_profile_changed_failure">Failed to change profile picture</string>
+    <string name="profile_picture_failure">Failed to open camera</string>
+    <string name="profile_update_profile_picture_button_text">Update</string>
+
+    <string-array name="options_profile_picture">
+        <item>Camera</item>
+        <item>Gallery</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_environment_title">Configurações de Ambiente</string>
+    <string name="app_environment_dev">Selecionar Dev</string>
+    <string name="app_environment_mock">Selecionar Mock</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:paddingEnd="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="8dp"
+    android:id="@+id/root"
+    android:outlineProvider="background"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:drawableStart="@drawable/common_send_message_ic"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        tools:text="Alindsadsa"
+        style="@style/Remember.Style.Text"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

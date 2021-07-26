@@ -1,0 +1,108 @@
+{
+  "next": null,
+  "previous": null,
+  "current": null,
+  "count": 32,
+  "results": [
+    {
+      "id": "ladjalkdjalsk",
+      "answered": false,
+      "accepted": false,
+      "memory_line": {
+        "id": "ksdjlak",
+        "title": "testando",
+        "description": "ljsadlakj"
+      },
+      "owner": {
+        "id": "8f6db6f3-a6c7-4cc6-ad9c-c7e689332369",
+        "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_14.jpg",
+        "first_name": "Vinicius",
+        "last_name": "Viana",
+        "username": "adonalsium",
+        "email": "adsadasdsada@hotmail.com",
+        "birth_date": "1997-09-05"
+      },
+      "guest": "aljkdhkajdskahkjdah"
+    },
+    {
+      "id": "ladjalkdjalsk",
+      "answered": false,
+      "accepted": false,
+      "memory_line": {
+        "id": "ksdjlak",
+        "title": "testando",
+        "description": "ljsadlakj"
+      },
+      "owner": {
+        "id": "8f6db6f3-a6c7-4cc6-ad9c-c7e689332369",
+        "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_14.jpg",
+        "first_name": "Vinicius",
+        "last_name": "Viana",
+        "username": "adonalsium",
+        "email": "dsadsadasdsa@hotmail.com",
+        "birth_date": "1997-09-05"
+      },
+      "guest": "aljkdhkajdskahkjdah"
+    },
+    {
+      "id": "ladjalkdjalsk",
+      "answered": false,
+      "accepted": false,
+      "memory_line": {
+        "id": "ksdjlak",
+        "title": "testando",
+        "description": "ljsadlakj"
+      },
+      "owner": {
+        "id": "8f6db6f3-a6c7-4cc6-ad9c-c7e689332369",
+        "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_14.jpg",
+        "first_name": "Vinicius",
+        "last_name": "Viana",
+        "username": "adonalsium",
+        "email": "dlksadjsalk@hotmail.com",
+        "birth_date": "1997-09-05"
+      },
+      "guest": "aljkdhkajdskahkjdah"
+    },
+    {
+      "id": "ladjalkdjalsk",
+      "answered": false,
+      "accepted": false,
+      "memory_line": {
+        "id": "ksdjlak",
+        "title": "testando",
+        "description": "ljsadlakj"
+      },
+      "owner": {
+        "id": "8f6db6f3-a6c7-4cc6-ad9c-c7e689332369",
+        "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_14.jpg",
+        "first_name": "Vinicius",
+        "last_name": "Viana",
+        "username": "adonalsium",
+        "email": "dlksadjsalk@hotmail.com",
+        "birth_date": "1997-09-05"
+      },
+      "guest": "aljkdhkajdskahkjdah"
+    },
+    {
+      "id": "ladjalkdjalsk",
+      "answered": false,
+      "accepted": false,
+      "memory_line": {
+        "id": "ksdjlak",
+        "title": "testando",
+        "description": "ljsadlakj"
+      },
+      "owner": {
+        "id": "8f6db6f3-a6c7-4cc6-ad9c-c7e689332369",
+        "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_14.jpg",
+        "first_name": "Vinicius",
+        "last_name": "Viana",
+        "username": "adonalsium",
+        "email": "dlksadjsalk@hotmail.com",
+        "birth_date": "1997-09-05"
+      },
+      "guest": "aljkdhkajdskahkjdah"
+    }
+  ]
+}

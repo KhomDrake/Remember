@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.remember.memoryline">
+
+    <application>
+        <activity
+            android:name=".ui.CreateMemoryLineActivity"
+            android:theme="@style/RememberAppTheme.Light"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="${applicationId}.CREATE_MEMORY_LINE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name=".MemoryLineModule"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="${applicationId}.Dependency.MemoryLine" />
+    </application>
+
+</manifest>

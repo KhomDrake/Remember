@@ -1,0 +1,49 @@
+<resources>
+    <string name="moment_preview_photo_send">Send</string>
+    <string name="moment_choose_memory_line_text">Choose MemoryLine</string>
+    <string name="moment_write_moment_text">Write your moment</string>
+    <string name="moment_write_moment_hint">Text Moment</string>
+    <string name="moment_preview_photo_description">Description</string>
+    <string name="moment_preview_photo_description_hint">Description here</string>
+    <string name="moment_cannot_send_empty_text">Cannot send an empty text</string>
+    <string name="moment_send_with_success">Sent with success</string>
+    <string name="moment_send_status_complete">Success</string>
+    <string name="moment_send_status_complete_notification">Success sending the moment</string>
+    <string name="moment_send_status_failure_notification">Error sending moment</string>
+    <string name="moment_hint_description">Write a description...</string>
+    <string name="moment_create_moment_publish">Publish</string>
+    <string name="moment_create_moment_title">New Moment</string>
+    <string name="moment_send_empty_comment">Cannot post an empty comment</string>
+    <string name="moment_send_comment_success">Comment sent successfully</string>
+    <string name="moment_send_comment_error">Failed to send comment</string>
+    <string name="moment_moment_comments_comment">Comments...</string>
+    <string name="moment_detail_comment">Comment</string>
+    <string name="moment_add_moment_button_text">Add Moment</string>
+    <string name="moment_send_moment_text">Sending</string>
+    <string name="moment_types_error_body">Unable to load Memory Line types. Please try again.</string>
+    <string name="moment_send_moment_error_title">Failed to send the moment</string>
+    <string name="moment_send_moment_error_body">Unable to send the moment. Please try submitting again.</string>
+
+    <string name="moment_detail_moment_error_body">Could not load moment. Please try again.</string>
+
+    <string name="moment_preview_moment_title_confirm_creation">Confirm moment creation</string>
+    <string name="moment_preview_moment_positive_button_text">Confirm</string>
+    <string name="moment_preview_moment_negative_button_text">Cancel</string>
+
+    <string name="moment_delete_moment_title">Do you really want to delete?</string>
+    <string name="moment_delete_moment_message">It will not be possible to retrieve the moment after deleting it.</string>
+    <string name="moment_delete_moment_positive_button_text">Cancel</string>
+    <string name="moment_delete_moment_negative_button_text">Delete</string>
+    <string name="moment_comments_toolbar_title">Comments</string>
+
+    <string name="moment_failed_to_delete_moment">Failed to delete moment</string>
+    <string name="moment_picture_failure">Failed to open camera</string>
+    <string name="moment_remove_moment">Delete</string>
+
+    <string name="moment_comments_error_body">Could not load Moment comments. Please try again.</string>
+
+    <plurals name="moment_comments_quantity">
+        <item quantity="one">%d Comment</item>
+        <item quantity="other">%d Comments</item>
+    </plurals>
+</resources>

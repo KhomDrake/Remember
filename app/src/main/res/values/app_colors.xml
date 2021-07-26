@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background_memory_line">#313E48</color>
+    <color name="background_bottom_navigation">#3F4E5A</color>
+    <color name="button_color">#38B49D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="app_bottom_navigation_background">#FFFFFF</color>
+</resources>

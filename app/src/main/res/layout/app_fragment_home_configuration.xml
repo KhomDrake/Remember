@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingStart="26dp"
+    android:paddingEnd="26dp"
+    tools:background="?attr/colorPrimary">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/configuration_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_configuration_title"
+        android:layout_marginTop="16dp"
+        style="@style/Remember.Style.Title.Bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.remember.common.widget.SwitchTextView
+        android:id="@+id/config_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_config_notification_text"
+        android:layout_marginTop="32dp"
+        app:isChecked="false"
+        app:isEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/configuration_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.remember.common.widget.SwitchTextView
+        android:id="@+id/config_memories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_config_memories_text"
+        android:layout_marginTop="16dp"
+        app:isChecked="false"
+        app:isEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/config_notification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.remember.common.widget.SwitchTextView
+        android:id="@+id/config_invites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_config_invites_text"
+        android:layout_marginTop="16dp"
+        app:isChecked="true"
+        app:isEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/config_memories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.remember.common.widget.SwitchTextView
+        android:id="@+id/config_notification_out_of_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_config_notification_out_of_app_text"
+        android:layout_marginTop="16dp"
+        app:isChecked="false"
+        app:isEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/config_invites"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Remember.Style.Text"
+        tools:text="Versão 2.35.4.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/leave_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/app_button_leave_text"
+        android:textAllCaps="false"
+        style="@style/Remember.Widget.Button.Loader.Green"
+        app:layout_constraintBottom_toTopOf="@id/version"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/app_button_delete_account_text"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:alpha=".5"
+        style="@style/Remember.Widget.Button.Loader.Red"
+        app:layout_constraintBottom_toTopOf="@id/leave_account_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

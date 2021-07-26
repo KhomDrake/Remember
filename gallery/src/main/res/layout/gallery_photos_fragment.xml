@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.remember.common.widget.RememberToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Remember.Widget.Toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photos"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:paddingBottom="16dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/gallery_photo"/>
+
+    <include
+        layout="@layout/gallery_photos_fragment_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moment_navigation"
+    app:startDestination="@id/cameraFragment">
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.remember.moment.ui.create.camera.MomentCameraFragment"
+        android:label="CameraFragment"
+        tools:layout="@layout/camera_fragment_camera">
+        <action
+            android:id="@+id/goToPreviewPhotoFromCamera"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/previewPhotoFragment">
+            <argument
+                android:name="memoryLineData"
+                android:defaultValue="@null"
+                app:nullable="true"
+                app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+            <argument
+                android:name="file"
+                app:argType="java.io.File"
+                app:nullable="false" />
+        </action>
+        <action
+            android:id="@+id/directToGallery"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@navigation/moment_navigation"
+            app:destination="@id/momentChooseAlbumFragment">
+            <argument
+                android:name="memoryLineData"
+                android:defaultValue="@null"
+                app:nullable="true"
+                app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/previewPhotoFragment"
+        android:name="com.remember.moment.ui.create.preview.PreviewPhotoFragment"
+        android:label="PreviewPhotoFragment"
+        tools:layout="@layout/moment_fragment_preview_photo" >
+
+        <argument
+            android:name="memoryLineData"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+
+        <argument
+            android:name="file"
+            app:argType="java.io.File"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/sendBucketWithoutChooseMemoryLine"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/sendBucketFragment">
+
+            <argument
+                android:name="memoryLineData"
+                app:nullable="false"
+                app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+        </action>
+        <action
+            android:id="@+id/chooseMemoryLine"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/chooseMemoryLineFragment">
+            <argument
+                android:name="file"
+                app:argType="java.io.File"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/sendBucketFragment"
+        android:name="com.remember.moment.ui.create.send.SendMomentFragment"
+        android:label="SendBucketFragment"
+        tools:layout="@layout/moment_fragment_send_moment">
+
+        <argument
+            android:name="file"
+            app:argType="java.io.File"
+            app:nullable="false" />
+
+        <argument
+            android:name="memoryLineData"
+            app:nullable="false"
+            app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/chooseMemoryLineFragment"
+        android:name="com.remember.moment.ui.create.select_memory_line.ChooseMemoryLineFragment"
+        android:label="ChooseMemoryLineFragment"
+        tools:layout="@layout/moment_fragment_choose_memory_line">
+        <argument
+            android:name="file"
+            app:argType="java.io.File"
+            app:nullable="false" />
+        <action
+            android:id="@+id/sendToBucket"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/sendBucketFragment">
+            <argument
+                android:name="file"
+                app:argType="java.io.File"
+                app:nullable="false" />
+            <argument
+                android:name="memoryLineData"
+                app:nullable="false"
+                app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/momentChooseAlbumFragment"
+        android:name="com.remember.moment.ui.create.gallery.MomentChooseAlbumFragment"
+        android:label="MomentChooseAlbumFragment"
+        tools:layout="@layout/gallery_albums_fragment">
+
+
+        <argument
+            android:name="memoryLineData"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+
+        <action
+            android:id="@+id/choosePhoto"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/momentChoosePhotoFragment">
+
+            <argument
+                android:name="memoryLineData"
+                android:defaultValue="@null"
+                app:nullable="true"
+                app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+            <argument
+                android:name="album"
+                app:argType="com.remember.repository.model.Album"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/momentChoosePhotoFragment"
+        android:name="com.remember.moment.ui.create.gallery.MomentChoosePhotoFragment"
+        android:label="MomentChoosePhotoFragment"
+        tools:layout="@layout/gallery_photos_fragment">
+
+        <argument
+            android:name="memoryLineData"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+        <argument
+            android:name="album"
+            app:argType="com.remember.repository.model.Album"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/goToPreviewPhoto"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/previewPhotoFragment">
+
+            <argument
+                android:name="memoryLineData"
+                android:defaultValue="@null"
+                app:nullable="true"
+                app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+            <argument
+                android:name="file"
+                app:argType="java.io.File"
+                app:nullable="false" />
+        </action>
+    </fragment>
+</navigation>

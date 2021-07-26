@@ -1,0 +1,46 @@
+{
+  "next": "asskldjalskdjsal",
+  "previous": null,
+  "count": 2,
+  "results": [
+    {
+      "id": "28fa0453-eb19-44a7-a569-c5ed2e97a868",
+      "file": "https://www.brandonsanderson.com/wp-content/uploads/2019/11/lyon_jezrien_web.jpg",
+      "description": "akjsdhkajdshkaj",
+      "owner": {
+        "id": "lsajkdlaks",
+        "photo": null
+      },
+      "comments_count": 10,
+      "memory_line": "b5f962f1-8fe7-45d7-a665-4eb8346b2bcf",
+      "pub_date": "2020-06-15T22:17:47.303153-03:00",
+      "updated_at": "2020-06-15T22:17:47.303153-03:00"
+    },
+    {
+      "id": "28fa0453-eb19-44a7-a569-c5ed2e97a868",
+      "file": "https://lrmonline.com/wp-content/uploads/2020/01/words-of-radiance-stormlight-archive.jpg?mrf-size=m",
+      "description": "akjsdhkajdshkaj",
+      "owner": {
+        "id": "lsajkdlaks",
+        "photo": null
+      },
+      "comments_count": 10,
+      "memory_line": "b5f962f1-8fe7-45d7-a665-4eb8346b2bcf",
+      "pub_date": "2020-06-15T22:17:47.303153-03:00",
+      "updated_at": "2020-06-15T22:17:47.303153-03:00"
+    },
+    {
+      "id": "28fa0453-eb19-44a7-a569-c5ed2e97a868",
+      "file": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3FJ2Fc5gcDUEN4zAw8jhjT4GOUaOG88tRVQ&usqp=CAU",
+      "description": "akjsdhkajdshkaj",
+      "owner": {
+        "id": "lsajkdlaks",
+        "photo": null
+      },
+      "comments_count": 10,
+      "memory_line": "b5f962f1-8fe7-45d7-a665-4eb8346b2bcf",
+      "pub_date": "2020-06-15T22:17:47.303153-03:00",
+      "updated_at": "2020-06-15T22:17:47.303153-03:00"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="-12dp" android:left="-12dp">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/colorSecondaryLight" />
+
+            <stroke
+                android:width="1dp"
+                android:color="?attr/colorSecondaryLight" />
+
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+</layer-list>

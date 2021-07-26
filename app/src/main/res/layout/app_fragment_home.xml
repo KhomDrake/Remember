@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:background="?attr/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.remember.common.widget.RememberToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_home_title"
+            style="@style/Remember.Widget.Toolbar.Logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/empty_state_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/app_empty_state_home_text"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            style="@style/Remember.Style.Title.Bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            layout="@layout/app_fragment_home_placeholder"/>
+
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            style="@style/Remember.Style.Indicator"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/indicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.nambimobile.widgets.efab.ExpandableFabLayout
+            android:id="@+id/home_add_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.nambimobile.widgets.efab.Overlay
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <com.nambimobile.widgets.efab.ExpandableFab
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="18dp"
+                    app:efab_color="?attr/colorSecondary"/>
+
+                <com.nambimobile.widgets.efab.FabOption
+                    android:id="@+id/select_memory_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_enabled="false"
+                    app:fab_color="?attr/colorSecondary"
+                    app:fab_icon="@drawable/app_ic_memory_line"
+                    app:label_text="@string/app_add_memory_line"/>
+
+                <com.nambimobile.widgets.efab.FabOption
+                    android:id="@+id/select_memory_line_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_color="?attr/colorSecondary"
+                    app:fab_icon="@drawable/app_ic_memory_line_type"
+                    app:label_text="@string/app_add_memory_line_type"/>
+        </com.nambimobile.widgets.efab.ExpandableFabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

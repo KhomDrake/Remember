@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="?attr/colorPrimary"
+    tools:parentTag="androidx.appcompat.widget.LinearLayoutCompat">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recycler_view_see_more_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        style="@style/Remember.Style.Title.Bold"
+        tools:text="Lembranças"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_see_more_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recycler_view_see_more_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="14dp"
+        android:visibility="gone"
+        android:nestedScrollingEnabled="false"
+        style="@style/Remember.Style.Text.Small.Grey2"
+        tools:text="Ver todas as lembranças"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recycler_view_see_more_empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:visibility="gone"
+        style="@style/Remember.Style.Text.Small.Grey2"
+        tools:text="Ver todas as lembranças"/>
+
+</merge>

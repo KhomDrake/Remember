@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "BASE_URL", "\"https://github.com/KhomDrake/Remember/\"")
+        }
+        debug {
+            minifyEnabled false
+            buildConfigField("String", "BASE_URL", "\"https://github.com/KhomDrake/Remember/\"")
+        }
+    }
+}
+
+dependencies {
+    implementation project(':network')
+    implementation project(':extension')
+
+    implementation libs.mockk.core
+    implementation libs.kotlin.stdlib
+    implementation libs.kotlin.coroutines_android
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.core
+    implementation libs.arch_toolkit.livedata
+    implementation libs.koin.android
+    implementation libs.koin.viewmodel
+
+    debugImplementation libs.squareup.retrofit2.mock
+
+    testImplementation project(':test')
+
+}

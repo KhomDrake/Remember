@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="type_memory_line_type_toolbar_text">Memory Line Type</string>
+    <string name="type_hint_edit_text_create_memory_line_type">Memory line type name</string>
+    <string name="type_my_types_title">My types</string>
+    <string name="type_update_button_text">Update</string>
+    <string name="type_no_more_types">There is no more type to load</string>
+    <string name="type_bottom_sheet_information_title">Tip:</string>
+    <string name="type_bottom_sheet_information_message">To change the order of types, it is necessary to move them to the correct position and then click on update.</string>
+    <string name="type_bottom_sheet_information_positive_button">Understood</string>
+    <string name="type_move_items_to_update_error_message">Move types to be able to update</string>
+    <string name="type_failed_to_update_error_message">Failed to update type order</string>
+    <string name="type_failed_to_create_type_error_message">Failed to create Memory Line type</string>
+    <string name="type_update_types_success_message">Successfully updated</string>
+</resources>

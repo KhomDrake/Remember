@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/white_circle"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/common_white_logo"
+        app:layout_constraintBottom_toTopOf="@+id/hello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hello"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/onboarding_landing_logo_phrase"
+        style="@style/Remember.Style.Title.Big.Bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintStart_toStartOf="@+id/left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.remember.common.widget.LoaderButton
+        android:id="@+id/create_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/onboarding_landing_button_hello_remember_text"
+        style="@style/Remember.Widget.Button.White"
+        app:caps="true"
+        app:layout_constraintBottom_toTopOf="@+id/already_have_account"
+        app:layout_constraintEnd_toStartOf="@id/right"
+        app:layout_constraintStart_toEndOf="@id/left" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/already_have_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:text="@string/onboarding_landing_already_have_account_text"
+        android:foreground="@drawable/common_ripple"
+        style="@style/Remember.Style.Title.Bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/right"
+        app:layout_constraintStart_toEndOf="@id/left" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+ext.libs = [
+        "tools_build_gralde" :                                                                          "com.android.tools.build:gradle:$versions.tools_build_gradle",
+        "kotlin_gradle_plugin" :                                                                        "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+        "navigation_safe_args" :                                                                        "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.navigation",
+        "google_services" :                                                                             "com.google.gms:google-services:$versions.google_services",
+        "appcompat":                                                                                    "androidx.appcompat:appcompat:$versions.androidx.appcompat",
+        "kotlin_stdlib":                                                                                "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+        "expandable_layout":                                                                            "com.github.skydoves:expandablelayout:$versions.widgets.expandable_layout",
+        "expandable_fab":                                                                               "com.nambimobile.widgets:expandable-fab:$versions.widgets.expandable_fab",
+        "dots_indicator":                                                                               "com.tbuonomo.andrui:viewpagerdotsindicator:$versions.widgets.dots_indicator",
+        "circleimage":                                                                                  "de.hdodenhof:circleimageview:$versions.widgets.circleimage",
+        "compressor":                                                                                   "id.zelory:compressor:$versions.compressor",
+        "gson":                                                                                         "com.google.code.gson:gson:$versions.gson",
+        "concrete": [
+                "canarinho":                                                                            "br.com.concrete:canarinho:$versions.canarinho"
+        ],
+        "mockk": [
+                "core":                                                                                 "io.mockk:mockk:$versions.mockk",
+                "android":                                                                              "io.mockk:mockk-android:$versions.mockk"
+        ],
+        "jakewharton": [
+                "threetenabp":                                                                          "com.jakewharton.threetenabp:threetenabp:$versions.threetenabp",
+                "coroutines_adapter":                                                                   "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$versions.retrofit_coroutines"
+        ],
+        "kotlin": [
+                "gradle_plugin":                                                                        "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+                "coroutines_android":                                                                   "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines",
+                "stdlib":                                                                               "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
+        ],
+        "permissions_dispatcher":                                                                       "org.permissionsdispatcher:permissionsdispatcher:$versions.permissionsdispatcher",
+        "arch_toolkit": [
+                "delegate":                                                                             "br.com.arch.toolkit:delegate:$versions.arch_toolkit",
+                "livedata":                                                                             "br.com.arch.toolkit:livedata:$versions.arch_toolkit",
+                "recycler_adapter":                                                                     "br.com.arch.toolkit:recycler-adapter:$versions.arch_toolkit",
+                "statemachine":                                                                         "br.com.arch.toolkit:statemachine:$versions.arch_toolkit"
+        ],
+        "koin": [
+                "android":                                                                              "org.koin:koin-android:$versions.koin",
+                "viewmodel":                                                                            "org.koin:koin-androidx-viewmodel:$versions.koin",
+                "test":                                                                                 "org.koin:koin-test:$versions.koin"
+        ],
+        "squareup": [
+                "retrofit2": [
+                        "retrofit":                                                                     "com.squareup.retrofit2:retrofit:$versions.retrofit",
+                        "converter_gson":                                                               "com.squareup.retrofit2:converter-gson:$versions.converter_gson",
+                        "mock":                                                                         "com.squareup.retrofit2:retrofit-mock:$versions.retrofit"
+                ],
+                "okhttp3": [
+                        "logging":                                                                      "com.squareup.okhttp3:logging-interceptor:$versions.loggining_interceptor"
+                ]
+        ],
+        image_loading: [
+                "coil":                                                                                 "io.coil-kt:coil:$versions.image.coil",
+                "glide":                                                                                "com.github.bumptech.glide:glide:$versions.glide"
+        ],
+        "google": [
+                "material":                                                                             "com.google.android.material:material:$versions.material",
+                "guava":                                                                                "com.google.guava:guava:$versions.guava"
+        ],
+        "facebook": [
+                "shimmer":                                                                              "com.facebook.shimmer:shimmer:$versions.shimmer"
+        ],
+        "androidx": [
+                "navigation": [
+                        "ui":                                                                           "androidx.navigation:navigation-fragment-ktx:$versions.androidx.navigation",
+                        "fragment":                                                                     "androidx.navigation:navigation-ui-ktx:$versions.androidx.navigation",
+                ],
+                "constraint_layout":                                                                    "androidx.constraintlayout:constraintlayout:$versions.constraint_layout",
+                "camerax": [
+                        "camera2":                                                                      "androidx.camera:camera-camera2:$versions.androidx.camerax",
+                        "lifecycle":                                                                    "androidx.camera:camera-lifecycle:$versions.androidx.camerax",
+                        "view":                                                                         "androidx.camera:camera-view:$versions.androidx.camerax_view"
+                ],
+                "viewpager2":                                                                           "androidx.viewpager2:viewpager2:$versions.androidx.viewpager2",
+                "appcompat":                                                                            "androidx.appcompat:appcompat:$versions.androidx.appcompat",
+                "annotation":                                                                           "androidx.annotation:annotation:$versions.annotation",
+                "lifecycle": [
+                        "extensions":                                                                   "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle_extensions"
+                ],
+                "core":                                                                                 "androidx.core:core-ktx:$versions.androidx.core_ktx",
+                "recyclerview":                                                                         "androidx.recyclerview:recyclerview:$versions.androidx.recycler_view",
+                "swiperefresh":                                                                         "androidx.swiperefreshlayout:swiperefreshlayout:$versions.androidx.swiperefresh"
+        ],
+        "firebase": [
+                "bom":                                                                                  "com.google.firebase:firebase-bom:$versions.firebase.bom",
+                "analytics":                                                                            "com.google.firebase:firebase-analytics-ktx",
+                "messaging":                                                                            "com.google.firebase:firebase-messaging:$versions.firebase.messaging"
+        ],
+        "test": [
+                "fragment":                                                                             "androidx.fragment:fragment-testing:$versions.androidx.fragment_testing",
+                "core_testing":                                                                         "androidx.arch.core:core-testing:$versions.androidx.arch",
+                "truth":                                                                                "androidx.test.ext:truth:$versions.androidx.testcore",
+                "runner":                                                                               "androidx.test:runner:$versions.androidx.testcore",
+                "rules":                                                                                "androidx.test:rules:$versions.androidx.testcore",
+                "core_ktx":                                                                             "androidx.test:core-ktx:$versions.androidx.testcore",
+                "espresso": [
+                        "core":                                                                         "androidx.test.espresso:espresso-core:$versions.androidx.espresso",
+                        "contrib":                                                                      "androidx.test.espresso:espresso-contrib:$versions.androidx.espresso",
+                        "intents":                                                                      "androidx.test.espresso:espresso-intents:$versions.androidx.espresso"
+                ],
+                "uiautomator":                                                                          "androidx.test.uiautomator:uiautomator:$versions.androidx.uiautomator",
+                "junit_ktx":                                                                            "androidx.test.ext:junit-ktx:$versions.androidx.junitext",
+                "coroutines":                                                                           "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.coroutines"
+        ]
+]

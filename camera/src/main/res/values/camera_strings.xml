@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_open_camera_failed">Failed to open Camera</string>
+    <string name="camera_take_picture_failed">Failed to take a picture, try again</string>
+</resources>

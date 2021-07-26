@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:background="?attr/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.remember.common.widget.RememberToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_home_title"
+        style="@style/Remember.Widget.Toolbar.Logo2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/memory_line_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="42dp"
+        android:maxLines="1"
+        android:maxLength="32"
+        style="@style/Remember.Style.Title.Bold"
+        tools:text="HxH sadsadas as as sad sa dasd  dsa das das das"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/edit_memory_line_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_ic_edit"
+        android:layout_marginStart="4dp"
+        app:layout_constraintTop_toTopOf="@id/memory_line_name"
+        app:layout_constraintBottom_toBottomOf="@id/memory_line_name"
+        app:layout_constraintStart_toEndOf="@id/memory_line_name"/>
+
+    <com.remember.common.widget.ImageTextView
+        android:id="@+id/add_participant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_memory_line_configuration_add_participant"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/Remember.Widget.ImageTextView"
+        app:image="@drawable/common_ic_add_green"
+        app:layout_constraintTop_toBottomOf="@id/memory_line_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.remember.common.widget.ImageTextView
+        android:id="@+id/quantity_participants"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/Remember.Widget.ImageTextView"
+        app:image="@drawable/memory_line_ic_participants"
+        app:layout_constraintTop_toBottomOf="@id/add_participant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quantity_participants"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="0dp"
+        android:background="@drawable/app_line"
+        android:layout_height="1dp"/>
+
+    <com.remember.common.widget.ImageTextView
+        android:id="@+id/leave_memory_line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/app_memory_line_configuration_leave_memory_line_text"
+        style="@style/Remember.Widget.ImageTextView.Error"
+        app:image="@drawable/app_ic_leave_memory_line_icon"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.remember.common.widget.ImageTextView
+        android:id="@+id/delete_memory_line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/app_memory_line_configuration_delete_memory_line_text"
+        style="@style/Remember.Widget.ImageTextView.Error"
+        app:image="@drawable/app_ic_delete_memory_line"
+        app:layout_constraintTop_toBottomOf="@id/leave_memory_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        layout="@layout/app_fragment_memory_line_configuration_placeholder"/>
+
+    <com.remember.common.widget.ErrorView
+        android:id="@+id/error_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/remember_16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

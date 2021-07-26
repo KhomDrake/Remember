@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:parentTag="androidx.appcompat.widget.LinearLayoutCompat">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_compat_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        style="@style/Remember.Style.Switch"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        style="@style/Remember.Style.SubTitle.Bold"
+        tools:text="Deseja receber notificações dlsakjda lsjdsal kjaslkjsaldkja slkdja ldksajdlksajdalskd"/>
+
+</merge>

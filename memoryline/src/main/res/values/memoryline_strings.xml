@@ -1,0 +1,15 @@
+<resources>
+    <string name="memory_line_create_memory_line_title">New Memory Line</string>
+    <string name="memory_line_hint_memory_line_name">Memory Line Name</string>
+    <string name="memory_line_choose_memory_line_type">Choose Type</string>
+    <string name="memory_line_choose_memory_line_type_title">Choose Type:</string>
+    <string name="memory_line_add_participant_text">New participants</string>
+    <string name="memory_line_button_create_memory_line">Create</string>
+    <string name="memory_line_add_participant_button">Confirm</string>
+    <string name="memory_line_created_and_invites_send">Memory Line Created and invitations sent</string>
+    <string name="memory_line_failed_to_created">Unable to create Memory Line</string>
+    <plurals name="memory_line_participants">
+        <item quantity="one">%d Participant</item>
+        <item quantity="other">%d Participants</item>
+    </plurals>
+</resources>

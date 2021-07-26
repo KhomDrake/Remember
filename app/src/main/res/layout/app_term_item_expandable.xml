@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.skydoves.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:expandable_parentLayout="@layout/app_term_expandable_item_parent"
+        app:expandable_secondLayout="@layout/app_term_expandable_item_child"
+        app:expandable_animation="normal"
+        app:expandable_duration="500"
+        app:expandable_isExpanded="true"
+        app:expandable_showSpinner="true"
+        app:expandable_spinner_animate="true"
+        app:expandable_spinner_gravity="end"
+        app:expandable_spinner_size="24dp"
+        app:expandable_spinner_color="?attr/colorOnPrimary"/>
+
+</FrameLayout>

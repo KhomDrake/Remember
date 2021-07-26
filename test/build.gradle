@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+
+        debug {
+            minifyEnabled false
+        }
+    }
+
+}
+
+dependencies {
+    api project(":extension")
+
+    api libs.mockk.core
+    api libs.mockk.android
+    api libs.test.core_testing
+    api libs.test.fragment
+    api libs.test.truth
+    api libs.test.runner
+    api libs.test.rules
+    api libs.test.core_ktx
+    api libs.test.espresso.core
+    api libs.test.espresso.contrib
+    api libs.test.espresso.intents
+    api libs.test.uiautomator
+    api libs.test.junit_ktx
+    api libs.kotlin.coroutines_android
+    api(libs.test.coroutines) {
+        exclude group: "org.jetbrains.kotlinx", module: "kotlinx-coroutines-debug"
+    }
+    api libs.google.guava
+    api libs.koin.test
+    api libs.koin.viewmodel
+    api libs.arch_toolkit.livedata
+    api libs.squareup.retrofit2.retrofit
+}

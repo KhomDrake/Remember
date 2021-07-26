@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_pagination_empty">Without anymore items</string>
+    <string name="common_pagination_error">Try Again</string>
+    <string name="common_remember_title">REMEMBER</string>
+    <string name="common_message_error">Some error occurred</string>
+    <string name="common_error_view_title_default">An error has occurred</string>
+    <string name="common_error_view_body_default">It was not possible to load the information</string>
+    <string name="common_adding_participant_title">Adding Participants</string>
+    <string name="common_search_participant_hint">Search for new participants</string>
+    <string name="common_add_participant_default_button_text">Confirm</string>
+
+    <string name="common_memory_lines_error_body">It was not possible to load memory lines of this type. Please, try again.</string>
+    <string name="common_try_again">Try Again</string>
+    <string name="common_memory_lines_error_text">It was not possible to load memory lines</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/colorPrimary"
+    android:descendantFocusability="beforeDescendants"
+    android:id="@+id/root"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.remember.common.widget.RememberToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Remember.Widget.Toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/white_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/common_white_logo"
+        app:layout_constraintEnd_toStartOf="@id/right"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_username_or_email_input_name"
+        style="@style/Remember.Style.Title.Secondary.Dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/onboarding_login_username_or_email_input_name_text"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintTop_toBottomOf="@id/white_circle" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_username_or_email"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="KhomDrake"
+        style="@style/Remember.Style.Input"
+        app:layout_constraintTop_toBottomOf="@id/login_username_or_email_input_name"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintEnd_toEndOf="@id/right"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/input_password_input_name"
+        style="@style/Remember.Style.Title.Secondary.Dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/onboarding_login_input_password_input_name_text"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintTop_toBottomOf="@id/input_username_or_email" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Vinicius"
+        style="@style/Remember.Style.Input"
+        app:layout_constraintTop_toBottomOf="@id/input_password_input_name"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintEnd_toEndOf="@id/right"/>
+
+    <com.remember.common.widget.LoaderButton
+        android:id="@+id/login_button"
+        style="@style/Remember.Widget.Button.White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/login_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/input_password"
+        app:layout_constraintStart_toStartOf="@id/input_password"
+        app:layout_constraintTop_toBottomOf="@id/input_password"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

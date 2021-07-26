@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+}
+
+dependencies {
+    implementation libs.androidx.navigation.ui
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.core
+    implementation libs.arch_toolkit.delegate
+    implementation libs.arch_toolkit.livedata
+    implementation libs.kotlin.stdlib
+    implementation libs.kotlin.coroutines_android
+    implementation libs.compressor
+    implementation libs.koin.android
+
+    api libs.gson
+    api libs.jakewharton.threetenabp
+    api libs.image_loading.glide
+
+    testImplementation project(':test')
+    androidTestImplementation project(':test')
+}

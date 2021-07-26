@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moment_detail_navigation"
+    app:startDestination="@id/momentFragment">
+
+    <fragment
+        android:id="@+id/momentDetailFragment"
+        android:name="com.remember.moment.ui.detail.MomentDetailFragment"
+        android:label="MomentDetailFragment"
+        tools:layout="@layout/moment_fragment_moment_detail">
+        <argument
+            android:name="urlMoment"
+            app:nullable="false"
+            app:argType="string" />
+
+        <argument
+            android:name="idMoment"
+            app:nullable="false"
+            android:defaultValue="idMoment"
+            app:argType="string" />
+
+        <argument
+            android:name="isOwner"
+            app:nullable="false"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/momentCommentsFragment"
+        android:name="com.remember.moment.ui.detail.MomentCommentsFragment"
+        android:label="MomentCommentsFragment"
+        tools:layout="@layout/moment_fragment_moment_comments">
+        <argument
+            android:name="idMoment"
+            app:nullable="false"
+            android:defaultValue="idMoment"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/momentFragment"
+        android:name="com.remember.moment.ui.detail.MomentFragment"
+        android:label="MomentFragment"
+        tools:layout="@layout/moment_fragment_moment">
+
+        <argument
+            android:name="idMoment"
+            app:nullable="false"
+            android:defaultValue="idMoment"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_momentFragment_to_momentCommentsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/momentCommentsFragment">
+            <argument
+                android:name="idMoment"
+                app:nullable="false"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_momentFragment_to_momentDetailFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/momentDetailFragment">
+            <argument
+                android:name="urlMoment"
+                app:nullable="false"
+                app:argType="string" />
+
+            <argument
+                android:name="idMoment"
+                app:nullable="false"
+                app:argType="string" />
+
+            <argument
+                android:name="isOwner"
+                app:nullable="false"
+                app:argType="boolean" />
+        </action>
+    </fragment>
+</navigation>

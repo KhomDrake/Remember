@@ -1,0 +1,49 @@
+<resources>
+    <string name="moment_preview_photo_send">Enviar</string>
+    <string name="moment_choose_memory_line_text">Escolher MemoryLine</string>
+    <string name="moment_write_moment_text">Escreva seu momento</string>
+    <string name="moment_write_moment_hint">Texto Momento</string>
+    <string name="moment_preview_photo_description">Descrição</string>
+    <string name="moment_preview_photo_description_hint">Descrição Aqui</string>
+    <string name="moment_cannot_send_empty_text">Não pode enviar um texto vazio</string>
+    <string name="moment_send_with_success">Enviado com sucesso</string>
+    <string name="moment_send_status_complete">Sucesso</string>
+    <string name="moment_send_status_complete_notification">Sucesso ao enviar o momento</string>
+    <string name="moment_send_status_failure_notification">Erro ao enviar o momento</string>
+    <string name="moment_hint_description">Escreva uma descrição...</string>
+    <string name="moment_create_moment_publish">Publicar</string>
+    <string name="moment_create_moment_title">Novo Momento</string>
+    <string name="moment_send_empty_comment">Não pode enviar um comentário vazio</string>
+    <string name="moment_send_comment_success">Comentário enviado com sucesso</string>
+    <string name="moment_send_comment_error">Falha ao enviar comentário</string>
+    <string name="moment_moment_comments_comment">Comentário...</string>
+    <string name="moment_detail_comment">Comentar</string>
+    <string name="moment_add_moment_button_text">Adicionar Momento</string>
+    <string name="moment_send_moment_text">Enviando</string>
+    <string name="moment_types_error_body">Não foi possível carregas os tipos de Memory Line. Por favor, tente novamente.</string>
+    <string name="moment_send_moment_error_title">Falha ao enviar o momento</string>
+    <string name="moment_send_moment_error_body">Não foi possível enviar o momento. Por favor, tente enviar novamente.</string>
+
+    <string name="moment_detail_moment_error_body">Não foi possível carregar o momento. Por favor, tente novamente.</string>
+
+    <string name="moment_preview_moment_title_confirm_creation">Confirmar a criação do momento</string>
+    <string name="moment_preview_moment_positive_button_text">Confirmar</string>
+    <string name="moment_preview_moment_negative_button_text">Cancelar</string>
+
+    <string name="moment_delete_moment_title">Deseja realmente deletar?</string>
+    <string name="moment_delete_moment_message">Não será possível recuperar o momento após deletá-lo</string>
+    <string name="moment_delete_moment_positive_button_text">Cancelar</string>
+    <string name="moment_delete_moment_negative_button_text">Deletar</string>
+    <string name="moment_comments_toolbar_title">Comentários</string>
+
+    <string name="moment_failed_to_delete_moment">Falha ao deletar momento</string>
+    <string name="moment_picture_failure">Falha ao tentar abrir câmera</string>
+    <string name="moment_remove_moment">Excluir</string>
+
+    <string name="moment_comments_error_body">Não foi possível carregar os comentários do Momento. Por favor, tente novamente.</string>
+
+    <plurals name="moment_comments_quantity">
+        <item quantity="one">%d Comentário</item>
+        <item quantity="other">%d Comentários</item>
+    </plurals>
+</resources>

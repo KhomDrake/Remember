@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        testApplicationId "com.remember.remember.test"
+        applicationId "com.remember.remember"
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 26
+        versionName "4.4.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        upload {
+            storeFile file("$rootDir/distribution/key_store")
+            storePassword 'asdsadsadasdasdsa'
+            keyAlias 'dasdsadasdasdasdasdsa'
+            keyPassword 'dasdsadasdasdasdasdasd'
+        }
+    }
+
+    buildTypes {
+        release {
+            resValue 'string', 'app_name', "Remember"
+            signingConfig signingConfigs.upload
+            shrinkResources false
+            minifyEnabled false
+            buildConfigField("boolean", "SHOW_LEAVE_MEMORY_LINE", "false")
+        }
+
+        debug {
+            applicationIdSuffix '.debug'
+            resValue 'string', 'app_name', "Remember Debug"
+            debuggable true
+            shrinkResources false
+            minifyEnabled false
+            buildConfigField("boolean", "SHOW_LEAVE_MEMORY_LINE", "false")
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/atomicfu.kotlin_module'
+        exclude "**/attach_hotspot_windows.dll"
+        exclude "META-INF/licenses/**"
+        exclude "META-INF/AL2.0"
+        exclude "META-INF/LGPL2.1"
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = 1.8
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':extension')
+
+    implementation project(':moment')
+    implementation project(':type')
+    implementation project(':memoryline')
+    implementation project(':onboarding')
+    implementation project(':profile')
+    implementation project(':gallery')
+
+    implementation libs.expandable_layout
+    implementation libs.expandable_fab
+    implementation libs.appcompat
+    implementation libs.kotlin_stdlib
+    implementation libs.androidx.constraint_layout
+    implementation platform(libs.firebase.bom)
+    implementation libs.firebase.analytics
+    implementation libs.firebase.messaging
+
+    debugImplementation(libs.test.fragment) {
+        exclude group: 'androidx.test', module: 'core'
+    }
+
+    testImplementation project(':test')
+    androidTestImplementation project(':test')
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gallery_navigation"
+    app:startDestination="@id/albumsFragment">
+
+    <fragment
+        android:id="@+id/albumsFragment"
+        android:name="com.remember.gallery.AlbumsFragment"
+        android:label="AlbumsFragment"
+        tools:layout="@layout/gallery_albums_fragment">
+        <action
+            android:id="@+id/action_albumsFragment_to_photosFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/photosFragment">
+            <argument
+                android:name="album"
+                app:argType="com.remember.repository.model.Album"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.remember.gallery.PhotosFragment"
+        android:label="PhotosFragment"
+        tools:layout="@layout/gallery_photos_fragment">
+        <argument
+            android:name="album"
+            app:argType="com.remember.repository.model.Album"
+            app:nullable="false" />
+    </fragment>
+</navigation>

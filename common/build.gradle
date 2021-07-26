@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    api project(':repository')
+    implementation project(':extension')
+
+    api libs.google.material
+    api libs.dots_indicator
+    api libs.androidx.viewpager2
+    api libs.androidx.appcompat
+    api libs.androidx.navigation.ui
+    api libs.androidx.navigation.fragment
+    api libs.androidx.annotation
+    api libs.androidx.lifecycle.extensions
+    api libs.androidx.constraint_layout
+    api libs.androidx.core
+    api libs.androidx.recyclerview
+    api libs.arch_toolkit.delegate
+    api libs.arch_toolkit.livedata
+    api libs.arch_toolkit.recycler_adapter
+    api libs.arch_toolkit.statemachine
+    api libs.circleimage
+    api libs.image_loading.coil
+    api libs.image_loading.glide
+    api libs.kotlin_stdlib
+    api libs.permissions_dispatcher
+    api libs.koin.android
+    api libs.koin.viewmodel
+    api libs.facebook.shimmer
+    api libs.androidx.swiperefresh
+
+    testImplementation project(':test')
+    androidTestImplementation project(':test')
+}

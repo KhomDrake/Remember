@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp"
+    android:layout_marginTop="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="?attr/colorPrimary"
+    android:orientation="horizontal">
+
+    <com.remember.common.widget.Avatar
+        android:id="@+id/participant_profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/participant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:maxLength="16"
+        android:layout_gravity="center_vertical"
+        style="@style/Remember.Style.Text"
+        app:layout_constraintBottom_toBottomOf="@id/participant_profile_image"
+        app:layout_constraintEnd_toStartOf="@+id/owner_memory_line"
+        app:layout_constraintStart_toEndOf="@id/participant_profile_image"
+        app:layout_constraintTop_toTopOf="@id/participant_profile_image"
+        tools:text="Lucas Yudi asdasdasdasdasdsaasdaasd " />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/owner_memory_line"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/app_corner_owner_memory_line"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:text="@string/app_participant_item_memory_line_owner"
+        android:gravity="center"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        style="@style/Remember.Style.Text.Smallest.Success"
+        app:layout_constraintTop_toTopOf="@id/participant_profile_image"
+        app:layout_constraintBottom_toBottomOf="@id/participant_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

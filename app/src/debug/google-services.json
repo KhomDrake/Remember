@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1082989721912",
+    "project_id": "remember-debug-44c85",
+    "storage_bucket": "remember-debug-44c85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082989721912:android:ba60ffb27cc5253f7769cd",
+        "android_client_info": {
+          "package_name": "com.remember.remember.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082989721912-84btjfioc0802b57t9miq2gr1ihij684.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADxln5wFQZPetoACvPq4KQYxXUU__RuVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082989721912-84btjfioc0802b57t9miq2gr1ihij684.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

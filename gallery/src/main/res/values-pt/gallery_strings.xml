@@ -1,0 +1,6 @@
+<resources>
+    <string name="gallery_toolbar_title">Galeria</string>
+    <string name="gallery_albums_empty_text">Não foi possível localizar nenhum álbum</string>
+    <string name="gallery_photos_empty_text">Não foi possível carregar nenhuma foto</string>
+    <string name="gallery_photo_no_possible_to_select_photo">Não foi possível selecionar foto</string>
+</resources>

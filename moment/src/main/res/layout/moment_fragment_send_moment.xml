@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#263238">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/upload_cloud_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/moment_upload_cloud_ic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/upload_cloud_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/moment_send_moment_text"
+        style="@style/Remember.Style.Title.Bold"
+        app:layout_constraintTop_toBottomOf="@id/upload_cloud_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="1000"
+        android:progress="1"
+        android:progressTint="?attr/colorSuccess"
+        android:progressBackgroundTint="?attr/colorOnPrimary"
+        android:secondaryProgressTint="?attr/colorOnPrimary"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_cloud_text" />
+
+    <com.remember.common.widget.ErrorView
+        android:id="@+id/retrievable_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:errorTitle="@string/moment_send_moment_error_title"
+        app:errorBody="@string/moment_send_moment_error_body" />
+</androidx.constraintlayout.widget.ConstraintLayout>

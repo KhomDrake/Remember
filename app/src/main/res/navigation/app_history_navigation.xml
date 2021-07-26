@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/history_navigation"
+    app:startDestination="@+id/memoryLineHistoryFragment">
+    <fragment
+        android:id="@+id/memoryLineHistoryFragment"
+        android:name="com.remember.remember.ui.history.MemoryLineHistoryFragment"
+        android:label="MemoryLineHistoryFragment"
+        tools:layout="@layout/app_fragment_memory_line_history">
+        <action
+            android:id="@+id/action_memoryLineHistoryFragment_to_momentHistoryFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/momentHistoryFragment" >
+            <argument
+                android:name="url"
+                android:defaultValue=""
+                app:argType="string"
+                app:nullable="false" />
+        </action>
+        <action
+            android:id="@+id/action_memoryLineHistoryFragment_to_participantsHistoryFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/participantsHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/momentHistoryFragment"
+        android:name="com.remember.remember.ui.history.MomentHistoryFragment"
+        android:label="MomentHistoryFragment"
+        tools:layout="@layout/moment_fragment_moment_detail">
+        <argument
+            android:name="url"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/participantsHistoryFragment"
+        android:name="com.remember.remember.ui.history.ParticipantsHistoryFragment"
+        android:label="ParticipantsHistoryFragment"
+        tools:layout="@layout/app_fragment_memory_line_participants"/>
+</navigation>

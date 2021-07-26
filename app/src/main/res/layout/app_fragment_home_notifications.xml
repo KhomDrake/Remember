@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/remember_16dp"
+            android:text="@string/app_notifications_title"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            style="@style/Remember.Style.Title.Bold"/>
+
+        <com.remember.remember.ui.notifications.widgets.RecyclerViewSeeMoreItems
+            android:id="@+id/memories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="18dp"
+            app:titleText="@string/app_memories_title"
+            app:seeMoreText="@string/app_memories_see_more"
+            app:emptyText="@string/app_memories_empty_text"/>
+
+        <com.remember.remember.ui.notifications.widgets.RecyclerViewSeeMoreItems
+            android:id="@+id/invites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="22dp"
+            app:titleText="@string/app_invites_title"
+            app:seeMoreText="@string/app_invites_see_more"
+            app:emptyText="@string/app_invites_empty_text"/>
+
+        <com.remember.remember.ui.notifications.widgets.RecyclerViewSeeMoreItems
+            android:id="@+id/activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="20dp"
+            app:titleText="@string/app_activities_title"
+            app:seeMoreText="@string/app_activities_see_more"
+            app:emptyText="@string/app_activities_empty_text"/>
+
+        <include layout="@layout/app_fragment_home_notification_place_holder"/>
+
+        <com.remember.common.widget.ErrorView
+            android:id="@+id/error_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:errorBody="@string/app_error_notifications_body"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

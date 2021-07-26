@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_home_title">Remember</string>
+
+    <string name="app_title_home">Home</string>
+    <string name="app_title_notifications">Notifications</string>
+    <string name="app_title_configuration">Configuration</string>
+    <string name="app_remember_title">REMEMBER</string>
+    <string name="app_create_memory_line_memory_line_name">Name</string>
+    <string name="app_notifications_title">Notifications</string>
+    <string name="app_notification_empty_invites_text">There is no notifications :(</string>
+    <string name="app_memory_line_add_participant_title">New participant</string>
+    <string name="app_memory_line_configuration_add_participant">New participant</string>
+    <string name="app_memory_line_configuration_leave_memory_line_text">Leave Memory Line</string>
+    <string name="app_memory_line_configuration_delete_memory_line_text">Remove Memory Line</string>
+    <string name="app_memory_line_participants_title">Participants</string>
+    <string name="app_memory_line_participants_empty_state_text">There is no participant</string>
+    <string name="app_invites_accept_text">Accept</string>
+    <string name="app_invites_refuse_text">Refuse</string>
+    <string name="app_moment_comment_text">Comment</string>
+    <string name="app_participant_item_memory_line_owner">MEMORYLINE OWNER</string>
+    <string name="app_memory_line_empty_name">Name cannot be empty</string>
+    <string name="app_memory_line_name_not_changed">Change name before trying to update name</string>
+    <string name="app_memory_line_update_name_failed">Failed to change name</string>
+    <string name="app_update_with_success">Successfully changed</string>
+    <string name="app_invite_accept">Successfully accepted invite</string>
+    <string name="app_invite_accept_error">Failed to accept invitation</string>
+    <string name="app_invite_refused">Successfully refuse invite</string>
+    <string name="app_invite_refused_error">Failed to refuse invitation</string>
+    <string name="app_invite_messsage">%1$s is inviting you to memory line %2$s</string>
+    <string name="app_search_new_participant">Search new participant...</string>
+    <string name="app_successfully_invited">Invitation sent successfully</string>
+    <string name="app_quantity_participants">%1$d Participants</string>
+    <string name="app_create_memory_line">Create momemory line</string>
+    <string name="app_inform_memory_line_name">Inform a memory line name</string>
+    <string name="app_memory_line_created_with_success">Successfully created a memory line</string>
+    <string name="app_invites_send_with_success">Invitations sent successfully</string>
+    <string name="app_pending_invites"><b>Pending invites</b></string>
+    <string name="app_create_memory_line_title">New MemoryLine</string>
+    <string name="app_create_memory_line_action_text">Create</string>
+    <string name="app_name_memory_line_text">Memory Line Name</string>
+    <string name="app_create_memory_line_add_participant">New participant</string>
+    <string name="app_choose_participant_title">Add Participants</string>
+    <string name="app_confirm">Confirm</string>
+    <string name="app_accept_invite_text">Accept</string>
+    <string name="app_refuse_invite_text">Refuse</string>
+    <string name="app_change_memory_line_title"><b>Memory Line name</b></string>
+    <string name="app_change_memory_line_positive_button">Update</string>
+    <string name="app_change_memory_line_negative_button">Cancel</string>
+    <string name="app_empty_state_home_text">It looks like you don\'t have any type of memory line, create a type by clicking on (+)</string>
+    <string name="app_add_memory_line_type">Memory Line Type</string>
+    <string name="app_add_memory_line">Memory Line</string>
+    <string name="app_memories_title">Memories</string>
+    <string name="app_memories_see_more">See all memories</string>
+    <string name="app_memories_empty_text">Has no memories</string>
+    <string name="app_invites_title">Invitation</string>
+    <string name="app_activities_title">Memory Line Activities</string>
+    <string name="app_activities_see_more">See all activities</string>
+    <string name="app_activities_empty_text">Has no activities</string>
+    <string name="app_invites_see_more">See all invitations</string>
+    <string name="app_invites_empty_text">Has no invitations</string>
+    <string name="app_configuration_title">Configuration</string>
+    <string name="app_config_notification_text">I want to receive notifications within the App</string>
+    <string name="app_config_memories_text">I want to receive memories</string>
+    <string name="app_config_invites_text">I want to receive invitations</string>
+    <string name="app_config_notification_out_of_app_text">I want to receive notifications outside the App</string>
+    <string name="app_button_leave_text">Leave</string>
+    <string name="app_button_delete_account_text">Delete account</string>
+    <string name="app_add_moment_option_text">Camera</string>
+    <string name="app_add_moment_option_text_2">Gallery</string>
+    <string name="app_error_memory_line_title">An error has occurred</string>
+    <string name="app_error_memory_line_body">Unable to load moments from Memory Line. Please try again.</string>
+
+    <string name="app_version_app">Version %s</string>
+
+    <string name="app_error_notifications_body">Unable to load notifications. Please try again.</string>
+
+    <string name="app_error_history_body">Could not load Remember Story. Please try again.</string>
+
+    <string name="app_error_terms">There was an error accepting the usage condition term, please try again.</string>
+
+    <string name="app_error_terms_body">There was an error loading the usage condition term, please try again.</string>
+
+    <string name="app_invite_participants_button_text">To invite</string>
+    <string name="app_memory_line_history_name">History of remember</string>
+
+    <string name="app_change_memory_line_name_title">Enter new name</string>
+    <string name="app_change_memory_line_name_hint">Memory Line name</string>
+    <string name="app_change_memory_line_name_positive_button">Update</string>
+    <string name="app_change_memory_line_name_negative_button">Cancel</string>
+
+    <string name="app_memory_line_name_equal">The name remains the same, change the value please</string>
+    <string name="app_memory_line_name_empty">Empty value, change value please</string>
+    <string name="app_memory_line_name_success">Successfully changed Memory Line name</string>
+    <string name="app_memory_line_name_error">Failed to change Memory Line name</string>
+
+    <string name="app_memory_line_delete_success">Memory Line Deleted Successfully</string>
+    <string name="app_memory_line_delete_error">Failed to delete memory line</string>
+
+    <string name="app_add_participant_not_user_selected">Select a user to invite</string>
+
+    <string name="app_failure_to_create_invite">Failed to create invitation</string>
+
+    <string name="app_delete_memory_line_title">Do you really want to delete?</string>
+    <string name="app_delete_memory_line_message">It will not be possible to recover after deleting the memory line, all saved moments will be lost.</string>
+    <string name="app_delete_memory_line_positive_button">Cancel</string>
+    <string name="app_delete_memory_line_negative_button">Delete</string>
+    <string name="app_moment_comments_text">Comments</string>
+
+    <string name="app_cannot_open_camera_empty_state">You cannot create a moment, without creating a memory line type and a memory line first</string>
+
+    <string name="app_term_accept">Accept</string>
+
+    <!-- Push Notification -->
+    <string name="app_app_information_name">News Remember</string>
+    <string name="app_app_information_description">Receive notifications related to App news</string>
+    <string name="app_invite_name">Invitations</string>
+    <string name="app_invite_description">Receive notifications of invitations to join other Memory Lines</string>
+    <string name="app_comment_name">Comments</string>
+    <string name="app_comment_description">Receive notifications of comments from other users at the important moments in your life</string>
+    <string name="app_memory_line_name">Memory Line</string>
+    <string name="app_memory_line_description">Receive notifications to the shared timeline in remember</string>
+    <string name="app_moment_name">Moments</string>
+    <string name="app_moment_description">Receive notifications about important moments you shared in remember</string>
+    <string name="app_advertising_name">Advertising</string>
+    <string name="app_advertising_description">Receive advertising-related notifications</string>
+</resources>

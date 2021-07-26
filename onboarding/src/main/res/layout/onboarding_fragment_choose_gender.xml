@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gender_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_choose_gender_title"
+        android:layout_marginTop="32dp"
+        style="@style/Remember.Style.Title.Medium.Bold"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20" />
+
+    <com.remember.common.widget.CheckBoxTextView
+        android:id="@+id/checkbox_first_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/onboarding_checkbox_gender_first_option"
+        app:layout_constraintTop_toBottomOf="@id/gender_title"
+        app:layout_constraintStart_toStartOf="@id/left" />
+
+    <com.remember.common.widget.CheckBoxTextView
+        android:id="@+id/checkbox_second_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/onboarding_checkbox_gender_second_option"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_first_option"
+        app:layout_constraintStart_toStartOf="@id/left" />
+
+    <com.remember.common.widget.CheckBoxTextView
+        android:id="@+id/checkbox_third_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/onboarding_checkbox_gender_third_option"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_second_option"
+        app:layout_constraintStart_toStartOf="@id/left" />
+
+    <com.remember.common.widget.CheckBoxTextView
+        android:id="@+id/checkbox_fourth_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/onboarding_checkbox_gender_fourth_option"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_third_option"
+        app:layout_constraintStart_toStartOf="@id/left" />
+
+    <com.remember.common.widget.CheckBoxTextView
+        android:id="@+id/checkbox_firth_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/onboarding_checkbox_gender_firth_option"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_fourth_option"
+        app:layout_constraintStart_toStartOf="@id/left" />
+
+    <com.remember.common.widget.CheckBoxTextView
+        android:id="@+id/checkbox_six_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/onboarding_checkbox_gender_six_option"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_firth_option"
+        app:layout_constraintStart_toStartOf="@id/left" />
+
+    <com.remember.common.widget.LoaderButton
+        android:id="@+id/continue_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_button_continue_text"
+        android:layout_marginBottom="32dp"
+        style="@style/Remember.Widget.Button.Loader.White"
+        app:layout_constraintStart_toStartOf="@id/left"
+        app:layout_constraintEnd_toEndOf="@id/right"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

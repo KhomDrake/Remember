@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="extension_date_zone_id">Brazil/East</string>
+    <string name="extension_date_offset_hours">-3</string>
+    <string name="extension_date_language">pt-BR</string>
+    <string name="extension_date_preposition">de</string>
+    <string name="extension_update_now">Atualizado agora</string>
+    <string name="extension_when_is_not_possible_to_know_the_difference">Não foi possível calcular há quanto tempo foi postado</string>
+    <plurals name="extension_update_seconds">
+        <item quantity="one">Atualizado há %d segundo</item>
+        <item quantity="other">Atualizado há %d segundos</item>
+    </plurals>
+    <plurals name="extension_update_minutes">
+        <item quantity="one">Atualizado há %d minuto</item>
+        <item quantity="other">Atualizado há %d minutos</item>
+    </plurals>
+    <plurals name="extension_update_hours">
+        <item quantity="one">Atualizado há %d hora</item>
+        <item quantity="other">Atualizado há %d horas</item>
+    </plurals>
+    <plurals name="extension_update_days">
+        <item quantity="one">Atualizado há %d dia</item>
+        <item quantity="other">Atualizado há %d dias</item>
+    </plurals>
+    <plurals name="extension_update_months">
+        <item quantity="one">Atualizado há %d mês</item>
+        <item quantity="other">Atualizado há %d meses</item>
+    </plurals>
+    <plurals name="extension_update_years">
+        <item quantity="one">Atualizado há %d ano</item>
+        <item quantity="other">Atualizado há %d anos</item>
+    </plurals>
+</resources>

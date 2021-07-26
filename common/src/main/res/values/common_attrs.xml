@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorPrimaryLight" format="color" />
+    <attr name="colorSecondaryLight" format="color" />
+    <attr name="colorSecondaryDark" format="color" />
+    <attr name="colorOnPrimaryLight" format="color" />
+    <attr name="colorOnPrimaryDark" format="color" />
+    <attr name="colorOnSecondaryLight" format="color" />
+    <attr name="colorOnSecondaryDark" format="color" />
+    <attr name="colorOnSurfaceDark" format="color" />
+    <attr name="colorOnSurfaceVariant" format="color" />
+    <attr name="colorOnSurfaceLight" format="color" />
+    <attr name="colorOnSuccess" format="color" />
+    <attr name="colorOnNeutral" format="color" />
+    <attr name="colorHint" format="color" />
+    <attr name="colorHintPrimary" format="color" />
+    <attr name="colorSwitch" format="color" />
+    <attr name="colorStartShimmer" format="color" />
+    <attr name="colorEndShimmer" format="color" />
+    <attr name="colorNeutral" format="color" />
+    <attr name="colorSuccess" format="color" />
+    <attr name="colorBackground" format="color" />
+
+    <declare-styleable name="LoaderButton">
+        <attr name="android:text"/>
+        <attr name="android:fontFamily"/>
+        <attr name="android:textColor"/>
+        <attr name="android:background"/>
+        <attr name="android:textSize"/>
+        <attr name="caps" format="boolean"/>
+        <attr name="enabled" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchTextView">
+        <attr name="android:text"/>
+        <attr name="isEnabled" format="boolean"/>
+        <attr name="isChecked" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImageTextView">
+        <attr name="android:text"/>
+        <attr name="android:fontFamily"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="image" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckBoxTextView">
+        <attr name="android:text"/>
+    </declare-styleable>
+
+    <declare-styleable name="HintView">
+        <attr name="android:text"/>
+    </declare-styleable>
+
+    <declare-styleable name="RememberToolbar">
+        <attr name="android:text"/>
+        <attr name="android:fontFamily"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="navigationIcon" format="reference"/>
+        <attr name="backIcon" format="reference"/>
+        <attr name="avatarIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="EventEditText">
+        <attr name="android:hint"/>
+        <attr name="android:background"/>
+        <attr name="android:inputType"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textColorHint"/>
+        <attr name="android:indeterminateTint"/>
+        <attr name="android:lines"/>
+        <attr name="eventIcon" format="reference"/>
+        <attr name="hasUnderline" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="EventTextView">
+        <attr name="android:hint"/>
+        <attr name="android:background"/>
+        <attr name="eventIconTextView" format="reference"/>
+        <attr name="hasUnderlineTextView" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoaderEditText">
+        <attr name="android:hint"/>
+        <attr name="android:text"/>
+    </declare-styleable>
+
+    <declare-styleable name="ErrorView">
+        <attr name="errorTitle" format="reference"/>
+        <attr name="errorBody" format="reference"/>
+    </declare-styleable>
+
+</resources>

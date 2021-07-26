@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.remember.remember.ui.home.HomeFragment"
+        android:label="@string/app_title_home"
+        tools:layout="@layout/app_fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_memoryLineFragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/memoryLineFragment">
+
+            <argument
+                android:name="memoryLineData"
+                app:nullable="false"
+                app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+
+        </action>
+        <action
+            android:id="@+id/action_navigation_home_to_memoryLineParticipantsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/memoryLineParticipantsFragment">
+            <argument
+                android:name="idMemoryLine"
+                android:defaultValue="asd"
+                app:nullable="false"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.remember.remember.ui.notifications.NotificationsFragment"
+        android:label="@string/app_title_notifications"
+        tools:layout="@layout/app_fragment_home_notifications" />
+
+    <fragment
+        android:id="@+id/memoryLineFragment"
+        android:name="com.remember.remember.ui.home.memory_line.MemoryLineFragment"
+        android:label="MemoryLineFragment"
+        tools:layout="@layout/app_fragment_memory_line">
+
+        <argument
+            android:name="memoryLineData"
+            app:nullable="false"
+            app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+        <action
+            android:id="@+id/action_memoryLineFragment_to_memoryLineConfigurationFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/memoryLineConfigurationFragment">
+            <argument
+                android:name="memoryLineData"
+                app:nullable="false"
+                app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+        </action>
+        <action
+            android:id="@+id/action_memoryLineFragment_to_memoryLineParticipantsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/memoryLineParticipantsFragment">
+            <argument
+                android:name="idMemoryLine"
+                android:defaultValue="asd"
+                app:nullable="false"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/memoryLineConfigurationFragment"
+        android:name="com.remember.remember.ui.home.memory_line.configuration.MemoryLineConfigurationFragment"
+        android:label="MemoryLineConfigurationFragment"
+        tools:layout="@layout/app_fragment_memory_line_configuration">
+
+        <argument
+            android:name="memoryLineData"
+            app:nullable="false"
+            app:argType="com.remember.common.model.MemoryLineBaseInformation"/>
+        <action
+            android:id="@+id/action_memoryLineConfigurationFragment_to_memoryLineParticipantsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/memoryLineParticipantsFragment">
+            <argument
+                android:name="idMemoryLine"
+                android:defaultValue="asd"
+                app:nullable="false"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_memoryLineConfigurationFragment_to_memoryLineAddParticipantFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:destination="@id/memoryLineAddParticipantFragment">
+            <argument
+                android:name="idMemoryLine"
+                android:defaultValue="asd"
+                app:nullable="false"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/memoryLineParticipantsFragment"
+        android:name="com.remember.remember.ui.home.memory_line.participants.MemoryLineParticipantsFragment"
+        android:label="MemoryLineParticipantsFragment"
+        tools:layout="@layout/app_fragment_memory_line_participants">
+        <argument
+            android:name="idMemoryLine"
+            android:defaultValue="asd"
+            app:nullable="false"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_configuration"
+        android:name="com.remember.remember.ui.configuration.ConfigurationFragment"
+        android:label="ConfigurationFragment"
+        tools:layout="@layout/app_fragment_home_configuration"/>
+    <fragment
+        android:id="@+id/memoryLineAddParticipantFragment"
+        android:name="com.remember.remember.ui.home.memory_line.participants.MemoryLineAddParticipantFragment"
+        android:label="MemoryLineAddParticipantFragment"
+        tools:layout="@layout/common_add_participant_fragment">
+        <argument
+            android:name="idMemoryLine"
+            android:defaultValue="asd"
+            app:nullable="false"
+            app:argType="string" />
+    </fragment>
+</navigation>
