@@ -54,8 +54,6 @@ captures/
 # Google Services (e.g. APIs or Firebase)
 app/google-services.json
 
-credentials.properties
-
 # Freeline
 freeline.py
 freeline/
