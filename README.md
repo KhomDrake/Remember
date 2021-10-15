@@ -1,8 +1,12 @@
 # Remember-Android
 
-# The Team
+Remember is a project originally developed in college be me and my friends. After finishing college, we worked for a time in the project and this is the final android version of the project.<br/>
+The ideia of the Remember is a social network where you share the moments of your life with only the important people in your life. The moments that you share, only you and the people that you invite can see. <br/>
+The moments that the user can share, they are organized by Memory Lines and Types of Memory Lines. For example, you could create a Memory Line Type called family and create Memory Lines of travels, partys, birthdates that you had with you family and only add in any Memory Line only the people that need to see the moments that you shared.<br/>
+<br/>
+I also wrote a article in the medium about the history of Remember and how we developed. For more detail, I recommend that you read the <a href="https://medium.com/@viniciusviana_61216/how-i-created-my-first-app-3b7b9dc1ba77">article</a>.
 
-I could not talk about the Remember project without talking about the Remember team, my greats friends from college. There are five members officially and one not officially, first the five officially.
+# The Team
 
 <a href="https://www.linkedin.com/in/rodolfo-lima-8a2658111/">Rodolfo</a>, the guy of the ideas, our main backend developer, and architect, also worked with frontend web when needed.
 
