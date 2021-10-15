@@ -1,6 +1,18 @@
 # Remember-Android
 
+# The Team
 
+I could not talk about the Remember project without talking about the Remember team, my greats friends from college. There are five members officially and one not officially, first the five officially.
+
+<a href="https://www.linkedin.com/in/rodolfo-lima-8a2658111/">Rodolfo</a>, the guy of the ideas, our main backend developer, and architect, also worked with frontend web when needed.
+
+<a href="https://www.linkedin.com/in/lucas-yudi-ganeko-1ba3b3178/">Yudi</a>, the guy that your talk to when you need something from UX or anything involving database, was our DBA and Designer, also worked a lot with frontend web development.
+
+<a href="https://www.linkedin.com/in/juliana-oliveira-5232b316a/">Juliana</a>, our QA, creating automated tests to guarantee the functioning of Remember, she also worked with frontend web when needed.
+
+<a href="https://www.linkedin.com/in/vinicius-da-silva-ruiz-9a090618a/">Vinicius Ruiz</a>. He is our main frontend developer and agile, made a lot of the things on remember website.
+
+Me, <a href="https://www.linkedin.com/in/vinicius-viana-0a6440111/">Vinicius Viana</a>, our main Android developer and PO of the team, also helped with the backend sometimes.
 
 # Using
 - Koin
