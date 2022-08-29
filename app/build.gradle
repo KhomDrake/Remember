@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
 
 android {
 
@@ -91,4 +92,31 @@ dependencies {
 
     testImplementation project(':test')
     androidTestImplementation project(':test')
+}
+
+task findDeeplinks {
+    mkdir("build/deeplinks")
+    afterEvaluate {
+        layout.buildDirectory.asFileTree.filter {
+            it.name == "AndroidManifest.xml"
+        }.forEach {
+            String name = it.parentFile.parentFile.name
+            String fileContents = new File(it.absolutePath).getText('UTF-8')
+            if(fileContents.contains("android:scheme=\"http\"")) {
+                File file = new File(buildDir.path + "/deeplinks/" + name + ".txt")
+                String[] data = fileContents.split("(?=<data[\\s\\S]*?/>)")
+                String allData = ""
+                for(line in data) {
+                    println line
+                    if(line.contains("android:scheme=\"http\"")) {
+                        String[] deeplink = line.split("/>")[0].replaceAll("(<data|=|\"|/>)", "").split("(android:host|android:path|android:scheme)")
+                        String scheme = "scheme: " + deeplink[3].trim()
+                        String url = "url: " + deeplink[1].trim() + deeplink[2].trim()
+                        allData += "\n$scheme\n$url\n"
+                    }
+                }
+                file.text = allData
+            }
+        }
+    }
 }
