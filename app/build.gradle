@@ -94,29 +94,87 @@ dependencies {
     androidTestImplementation project(':test')
 }
 
-task findDeeplinks {
-    mkdir("build/deeplinks")
-    afterEvaluate {
-        layout.buildDirectory.asFileTree.filter {
+task findDeeplinks(type: Delete) {
+    dependsOn("assembleDebug")
+    doFirst {
+        mkdir("build/deeplinks")
+    }
+
+    doLast {
+        File androidManifest = layout.buildDirectory.asFileTree.filter {
             it.name == "AndroidManifest.xml"
-        }.forEach {
-            String name = it.parentFile.parentFile.name
-            String fileContents = new File(it.absolutePath).getText('UTF-8')
-            if(fileContents.contains("android:scheme=\"http\"")) {
-                File file = new File(buildDir.path + "/deeplinks/" + name + ".txt")
-                String[] data = fileContents.split("(?=<data[\\s\\S]*?/>)")
-                String allData = ""
-                for(line in data) {
-                    println line
-                    if(line.contains("android:scheme=\"http\"")) {
-                        String[] deeplink = line.split("/>")[0].replaceAll("(<data|=|\"|/>)", "").split("(android:host|android:path|android:scheme)")
-                        String scheme = "scheme: " + deeplink[3].trim()
-                        String url = "url: " + deeplink[1].trim() + deeplink[2].trim()
-                        allData += "\n$scheme\n$url\n"
+        }[0]
+        String fileContents = new File(androidManifest.absolutePath).getText('UTF-8')
+        String[] schemes = ["android:scheme=\"https\"", "android:scheme=\"sdsd\""]
+        String loggedIn = ""
+        String loggedOut = ""
+        if(fileContents.contains(schemes[0])) {
+            String[] data = fileContents.split("(?=<data[\\s\\S]*?/>)")
+            String allData = ""
+            for(line in data) {
+                if(line.contains(schemes[0])) {
+                    String[] deeplink = line.split("/>")[0].replaceAll("(<data|=|\"|/>)", "").split("(android:host|android:path|android:scheme)")
+                    String url = ""
+                    if(deeplink.length == 4) {
+                        url = deeplink[1].trim() + deeplink[2].trim()
+                    } else {
+                        url = deeplink[1].trim()
                     }
+                    allData = allData + "<li>$url</li>"
                 }
-                file.text = allData
             }
+            loggedOut = allData
         }
+        if(fileContents.contains(schemes[1])) {
+            String[] data = fileContents.split("(?=<data[\\s\\S]*?/>)")
+            String allData = ""
+            for(line in data) {
+                if(line.contains(schemes[1])) {
+                    String[] deeplink = line.split("/>")[0].replaceAll("(<data|=|\"|/>)", "").split("(android:host|android:path|android:scheme)")
+                    String url = ""
+                    if(deeplink.length == 4) {
+                        url = deeplink[1].trim() + deeplink[2].trim()
+                    } else {
+                        url = deeplink[1].trim()
+                    }
+                    allData = allData + "<li>/$url</li>"
+                }
+            }
+            loggedIn = allData
+        }
+
+        String html = """
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+            <title>CSS Template</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            header {
+              background-color: #666;
+              padding: 30px;
+              text-align: center;
+              font-size: 35px;
+              color: white;
+            }
+            </style>
+            </head>
+            <body>
+
+            <h2>Deeplink Logados</h2>
+              <ul>
+                $loggedIn
+              </ul>
+
+            <h2>Deeplink Deslogados</h2>
+             <ul>
+                $loggedOut
+             </ul>
+            </body>
+            </html>
+        """
+        println html
+//        file.text = html
     }
 }
